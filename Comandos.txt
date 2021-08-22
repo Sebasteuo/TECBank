@@ -1,0 +1,17 @@
+-Angular cli
+npm install -g @angular/cli
+
+-Crear proyecto
+ng new TECbank-WebApp
+
+-Iniciar servidor
+ng serve
+
+-Instalar paquetes
+npm install
+
+-Paquetes instalados
+ng add @ng-bootstrap/ng-bootstrap
+npm i ngx-toastr
+npm install --save flatpickr angularx-flatpickr
+npm install @angular/animations --save

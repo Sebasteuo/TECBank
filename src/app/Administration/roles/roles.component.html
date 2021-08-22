@@ -1,0 +1,82 @@
+<div class=" d-flex justify-content-center">
+    <aside class="col-lg" style="margin: 5% 5% 5% 5%;">
+        <div class="card">
+            <article class="card-body">
+                <h4 class="card-title mb-4 mt-1">Administración de Roles</h4>
+                <hr>
+                <div class="row">
+                    <!-- table -->
+                    <div class="col-md-4 table-responsive">
+                        <div class="card" style="margin-bottom: 10px;">
+                            <article class="card-body">
+                                <div class="form">
+                                    <form #form autocomplete="off">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label>Rol: </label>
+                                            </div>
+                                            <div class="col">
+                                                <input name="quantity" class="form-control" placeholder="Nombre"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label>Descripción: </label>
+                                            </div>
+                                            <div class="col">
+                                                <input name="quantity" class="form-control" placeholder="Descripción"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-primary btn-block">Agregar</button>
+                                        </div>
+                                
+                                </form>
+                        </div>
+            </article>
+        </div>
+
+</div>
+<div class="col-md-8">
+    <!-- Employee data -->
+    <div class="card">
+
+        <div class="card-body">
+            <div class="table-responsive">
+
+                <div class=table-wrapper>
+                    <table class="table table-hover bike-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let role of this.roles">
+                            <td>{{role.ID}}</td> 
+                            <td>{{role.Nombre}}</td> 
+                            <td>{{role.Descripcion}}</td> 
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- card.// -->
+    <br />
+    <br />
+</div>
+</div>
+</article>
+</div> <!-- card.// -->
+</aside> <!-- col.// -->
+</div> <!-- row.// -->
+
+<!--container end.//-->
