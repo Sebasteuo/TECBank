@@ -1,5 +1,19 @@
-<!-- Se crea barra de navegación-->
-<nav class="navbar navbar-expand-lg navbar-dark bike-nav">
-    <a class="navbar-brand">TEC Bank</a>
-</nav>
-<div class="line"></div>
+<!--/ Nav Star /-->
+<div *ngIf="logged">
+    <div *ngIf="showadmin">
+        <app-admin></app-admin>
+    </div>
+
+    <div *ngIf="showclient">
+        <app-cliente></app-cliente>
+    </div>
+</div>
+
+<div *ngIf="!logged">
+    <!-- Se crea barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-dark bike-nav">
+        <a class="navbar-brand">TEC Bank</a>
+    </nav>
+    <div class="line"></div>
+</div>
+<!--/ Nav End /-->

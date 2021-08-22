@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  logged: boolean = true;
+  //logged: boolean = false;
+  showclient: boolean = false;
+  showadmin: boolean = true;
+  //showoperator: boolean = false; 
   constructor() { }
 
   ngOnInit(): void {

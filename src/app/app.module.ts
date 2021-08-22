@@ -11,13 +11,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RolesComponent } from './Administration/roles/roles.component';
 import { NavigationComponent } from './Miscellanueous/navigation/navigation.component';
 import { WelcomeComponent } from './Miscellanueous/welcome/welcome.component';
+import { AdminComponent } from './Miscellanueous/navigation/admin/admin.component';
+import { ClienteComponent } from './Miscellanueous/navigation/cliente/cliente.component';
+import { FormsModule } from '@angular/forms';
+import { ClientesComponent } from './Administration/clientes/clientes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RolesComponent,
     NavigationComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AdminComponent,
+    ClienteComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +33,7 @@ import { WelcomeComponent } from './Miscellanueous/welcome/welcome.component';
     NgbModule,
     ToastrModule.forRoot(), // ToastrModule added
     FlatpickrModule.forRoot({ locale: Spanish }),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
