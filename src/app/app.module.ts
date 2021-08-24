@@ -15,6 +15,8 @@ import { AdminComponent } from './Miscellanueous/navigation/admin/admin.componen
 import { ClienteComponent } from './Miscellanueous/navigation/cliente/cliente.component';
 import { FormsModule } from '@angular/forms';
 import { ClientesComponent } from './Administration/clientes/clientes.component';
+import { AccountComponent } from './Administration/account/account.component';
+import { WithdrawalsComponent } from './Administration/withdrawals/withdrawals.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ClientesComponent } from './Administration/clientes/clientes.component'
     WelcomeComponent,
     AdminComponent,
     ClienteComponent,
-    ClientesComponent
+    ClientesComponent,
+    AccountComponent,
+    WithdrawalsComponent
   ],
   imports: [
     BrowserModule,

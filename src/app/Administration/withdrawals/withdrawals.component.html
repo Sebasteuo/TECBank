@@ -1,0 +1,77 @@
+<app-navigation></app-navigation>
+<div class=" d-flex justify-content-center">
+    <aside class="col-lg" style="margin: 5% 5% 5% 5%;">
+        <div class="card">
+            <article class="card-body">
+                <h4 class="card-title mb-4 mt-1">Caja</h4>
+                <hr>
+                <div class="row">
+                    <!-- table -->
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 table-responsive">
+                        <div class="card" style="margin-bottom: 10px;">
+                            <article class="card-body">
+                                <div class="form">
+                                    <form #form autocomplete="off">
+                                        <div class="form-row">
+                                            <div class="col form-group">
+                                                <label>Seleccione un número de cuenta: </label>
+                                            </div> 
+                                            <div class="col form-group">
+                                                <div ngbDropdown class="d-inline-block">
+                                                    <button class="btn btn-outline-primary" id="dropdownBasic1"
+                                                        ngbDropdownToggle>{{selectedValue}}</button>
+                                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                                        <button *ngFor="let account of accounts" ngbDropdownItem
+                                                            (click)="selectValue(account.ID)">{{account.ID}}</button>
+                                                       
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col form-group">
+                                                <label>Seleccione un tipo de movimiento: </label>
+                                            </div> 
+                                            <div class="col form-group">
+                                                <div ngbDropdown class="d-inline-block">
+                                                    <button class="btn btn-outline-primary" id="dropdownBasic1"
+                                                        ngbDropdownToggle>{{selectedMovimiento}}</button>
+                                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                                        <button  ngbDropdownItem
+                                                            (click)="selectMovimiento('Retiro')">Retiro</button>
+                                                        <button  ngbDropdownItem
+                                                            (click)="selectMovimiento('Depósito')">Déposito</button>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col form-group">
+                                                <label>Monto: </label>
+                                            </div> 
+                                            <div class="col form-group">
+                                                <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newline.movimiento"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block" (click)="add()">Procesar</button>
+                                            </div>
+                                            <div class="col-md-3"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </article>
+        </div>
+    </aside>
+</div>
