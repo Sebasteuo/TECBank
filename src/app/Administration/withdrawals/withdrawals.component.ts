@@ -1,3 +1,4 @@
+//Componente para manejar depósitos y retiros de las cuentas bancarias.
 import { Component, OnInit } from '@angular/core';
 import { Account } from 'src/app/models/account.model';
 import { BalanceLine } from 'src/app/models/balance-line.model';
@@ -11,7 +12,7 @@ import { AccountManagementService } from 'src/app/Services/account-management.se
 export class WithdrawalsComponent implements OnInit {
 
   constructor(private accountservice:AccountManagementService) { }
-  accounts: Account[] = []
+  accounts: Account[] = [] //Contiene la lista con todas las cuentas bancarias
   selectedAccount: Account={ ID:0,
     Descripcion : '',
     Tipo: 0,

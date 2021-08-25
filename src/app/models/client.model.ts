@@ -1,3 +1,4 @@
+//Atributos para el objeto Cliente
 export class Client {
     Nombre: string|undefined;
     Apellido1: string|undefined;

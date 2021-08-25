@@ -1,3 +1,4 @@
+//Clases para el manejo de datos con el API
 import { Injectable } from '@angular/core';
 import { Client } from '../models/client.model';
 
@@ -23,11 +24,13 @@ export class ClientManagementService {
     return this.clients;
   }
   
+  //Envía el ID del cliente que se va a eliminar al API
   deleteClient(id: number | undefined) {
     this.clients = this.clients.filter((obj) => obj.ID !== id);
     return this.clients;
   }
 
+  //Envía los datos modificados al API (esta función se comporta igual a la que account-management.service)
   editClient(selecter: Client) {
     this.clients.forEach((role,index)=>{
       if(role.ID==selecter.ID){
@@ -39,6 +42,7 @@ export class ClientManagementService {
     return this.clients
   }
 
+  //Envía los datos de un nuevo cliente al API
   addClient(Client : Client){
     this.clients.push(Client);
     return this.clients;

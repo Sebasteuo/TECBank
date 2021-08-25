@@ -1,3 +1,4 @@
+//Acá se importan dependencias 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { ClientesComponent } from './Administration/clientes/clientes.component';
 import { AccountComponent } from './Administration/account/account.component';
 import { WithdrawalsComponent } from './Administration/withdrawals/withdrawals.component';
+import { LoginComponent } from './Miscellanueous/login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { WithdrawalsComponent } from './Administration/withdrawals/withdrawals.c
     ClienteComponent,
     ClientesComponent,
     AccountComponent,
-    WithdrawalsComponent
+    WithdrawalsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

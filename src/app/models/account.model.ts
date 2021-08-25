@@ -1,3 +1,4 @@
+//Atributos para el objeto cuenta
 export class Account {
     ID: number|undefined;
     Descripcion: string|undefined;

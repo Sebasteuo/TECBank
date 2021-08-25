@@ -1,3 +1,4 @@
+//Clases para manejar los Roles
 import { Injectable } from '@angular/core';
 import { Role } from '../models/role.model';
 
@@ -12,11 +13,13 @@ export class RoleManagementService {
     return this.roles;
   }
   
+  //Envía al API el ID del rol eliminado
   deleteRole(id: number | undefined) {
     this.roles = this.roles.filter((obj) => obj.ID !== id);
     return this.roles;
   }
 
+  //Envía al API el ID del rol Editado
   editRole(selecter: Role) {
     this.roles.forEach((role,index)=>{
       if(role.ID==selecter.ID){
@@ -28,10 +31,10 @@ export class RoleManagementService {
     return this.roles
   }
 
+  //Envía al API el ID del rol agregado
   addRole(role : Role){
     role.ID = this.roles.length + 1;
     this.roles.push(role);
     return this.roles;
   }
 }
-//
