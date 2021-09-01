@@ -19,6 +19,7 @@ import { ClientesComponent } from './Administration/clientes/clientes.component'
 import { AccountComponent } from './Administration/account/account.component';
 import { WithdrawalsComponent } from './Administration/withdrawals/withdrawals.component';
 import { LoginComponent } from './Miscellanueous/login/login.component';
+import { RegisterComponent } from './Miscellanueous/register/register.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LoginComponent } from './Miscellanueous/login/login.component';
     ClientesComponent,
     AccountComponent,
     WithdrawalsComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
