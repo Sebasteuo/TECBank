@@ -7,9 +7,9 @@ import { Credentials } from '../models/credentials.model';
   providedIn: 'root'
 })
 export class AuthenticationService {
-  newUser: Credentials={user:"",password:""}
+  newUser: Credentials={user:"",password:"", tipo:""}
   constructor(private router:Router,public toastr:ToastrService) { }
-  Users:Credentials[]=[{user:"Admin",password:"ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ="}]
+  Users:Credentials[]=[{user:"Admin",password:"ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=", tipo: "Administrador"}, {user:"Prueba", password:"ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=", tipo: "Cliente"}]
   login(user:string,password:string){
     
       this.Users.forEach(obj=>{

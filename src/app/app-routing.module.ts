@@ -8,6 +8,7 @@ import { AccountComponent } from './Administration/account/account.component';
 import { WithdrawalsComponent } from './Administration/withdrawals/withdrawals.component';
 import { LoginComponent } from './Miscellanueous/login/login.component';
 import { RegisterComponent } from './Miscellanueous/register/register.component';
+import { CardsComponent } from './Administration/cards/cards.component';
 
 
 //Primer ruta por defecto
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'Caja', component: WithdrawalsComponent},
   { path: 'Login', component: LoginComponent},
   { path: 'Registro', component: RegisterComponent},
+  { path: 'Tarjetas', component: CardsComponent},
 ];
 
 @NgModule({
