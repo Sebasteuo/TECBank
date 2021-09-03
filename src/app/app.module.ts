@@ -22,6 +22,8 @@ import { LoginComponent } from './Miscellanueous/login/login.component';
 import { RegisterComponent } from './Miscellanueous/register/register.component';
 import { CardsComponent } from './Administration/cards/cards.component';
 import { AccountsComponent } from './Clients/accounts/accounts.component';
+import { ClientCardComponent } from './Clients/client-card/client-card.component';
+import { ClientLoanComponent } from './Clients/client-loan/client-loan.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { AccountsComponent } from './Clients/accounts/accounts.component';
     RegisterComponent,
     CardsComponent,
     AccountsComponent,
+    ClientCardComponent,
+    ClientLoanComponent,
   ],
   imports: [
     BrowserModule,

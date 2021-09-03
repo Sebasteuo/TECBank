@@ -19,6 +19,7 @@ export class NavigationComponent implements OnInit {
     this.logged = this.loggedIn();
     this.showadmin = this.isAdmin();
     this.showclient = this.isClient();
+   
   }
   loggedIn() {
     if (localStorage.getItem('User') != null)
@@ -28,14 +29,14 @@ export class NavigationComponent implements OnInit {
   }
 
   isClient() {
-    if (localStorage.getItem('UserType') == 'Client')
+    if (localStorage.getItem('UserType') == 'Cliente')
       return true;
     else
       return false;
   }
 
   isAdmin() {
-    if (localStorage.getItem('UserType') == 'admin')
+    if (localStorage.getItem('UserType') == 'Administrador')
       return true;
     else
       return false;

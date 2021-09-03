@@ -6,11 +6,11 @@
 @import 'flatpickr/dist/flatpickr.css';
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 /* Color Theme Swatches in Hex */
-$Bikes-1-hex: #3C851B;
-$Bikes-2-hex: #7FC210;
-$Bikes-3-hex: #0E8F94;
-$Bikes-4-hex: #6FCCD6;
-$Bikes-5-hex: #175668;
+$Bank-1-hex: #3C851B;
+$Bank-2-hex: #777a71;
+$Bank-3-hex: #0E8F94;
+$Bank-4-hex: #6FCCD6;
+$Bank-5-hex: #000000;
 
 
 
@@ -20,18 +20,18 @@ body {
 }
 
 .line {
-    background-color: $Bikes-2-hex;
+    background-color: $Bank-2-hex;
     height          : 5px;
     width           : 100%;
 }
 
 .bike-nav {
-    background-color: $Bikes-5-hex;
+    background-color: $Bank-5-hex;
 }
 
 .bike-table {
     thead {
-        background-color: scale-color($Bikes-4-hex, $lightness: 10%);
+        background-color: scale-color($Bank-4-hex, $lightness: 10%);
         color           : white;
         text-align: center;
     }
@@ -41,18 +41,18 @@ body {
     }
 
     tfoot {
-        background-color: scale-color($Bikes-4-hex, $lightness: 30%);
+        background-color: scale-color($Bank-4-hex, $lightness: 30%);
         color           : white;
         text-align: center;
     }
 }
 
 .btn-outline-primary {
-    border-color: $Bikes-2-hex !important;
-    color       : $Bikes-2-hex;
+    border-color: $Bank-2-hex !important;
+    color       : $Bank-2-hex;
 
     &:hover {
-        background-color: $Bikes-2-hex !important;
+        background-color: $Bank-2-hex !important;
         color           : white;
     }
 
@@ -67,35 +67,35 @@ body {
 
 .dropdown-toggle {
     background-color: white;
-    color           : $Bikes-2-hex;
+    color           : $Bank-2-hex;
 
     &:visited {
-        background-color: $Bikes-2-hex !important;
+        background-color: $Bank-2-hex !important;
         color           : white;
     }
 
     &:hover {
-        background-color: $Bikes-2-hex !important;
+        background-color: $Bank-2-hex !important;
         color           : white;
     }
 
     &:focus {
-        background-color: $Bikes-2-hex !important;
+        background-color: $Bank-2-hex !important;
         color           : white;
     }
 
     &:active {
-        background-color: $Bikes-2-hex !important;
+        background-color: $Bank-2-hex !important;
         color           : white;
     }
 }
 
 .btn-primary {
-    background-color: $Bikes-2-hex !important;
+    background-color: $Bank-2-hex !important;
     border-color    : transparent;
 
     &:hover {
-        background-color: scale-color($Bikes-2-hex, $lightness: -15%) !important;
+        background-color: scale-color($Bank-2-hex, $lightness: -15%) !important;
         color           : white;
         border-color    : transparent;
     }
@@ -109,8 +109,8 @@ body {
 /* this is for clicked or active tabs */
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-    background-color: scale-color($Bikes-4-hex, $lightness: -5%);
-    color      : $Bikes-3-hex;
+    background-color: scale-color($Bank-4-hex, $lightness: -5%);
+    color      : $Bank-3-hex;
     font-size  : 15px;
     font-weight: bold;
 }
@@ -118,8 +118,8 @@ body {
 /* this is for normal tabs */
 .nav-tabs .nav-link {
     //background-color: white;
-    background-color: scale-color($Bikes-4-hex, $lightness: 45%);
-    color           : $Bikes-3-hex;
+    background-color: scale-color($Bank-4-hex, $lightness: 45%);
+    color           : $Bank-3-hex;
     font-size       : 15px;
     font-weight     : bold;
 }

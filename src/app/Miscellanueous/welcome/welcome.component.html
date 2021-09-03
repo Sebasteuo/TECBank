@@ -1,3 +1,32 @@
 <!--Se importa el componente Navigation-->
+<div *ngIf="isloggedIn">
 <app-navigation></app-navigation>
-<app-login></app-login>
+    <div class=" d-flex justify-content-center">
+        <aside class="col-lg" style="margin: 5% 5% 5% 5%;">
+            <div class="card">
+                <article class="card-body">
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="Titulo">
+                                Bienvenido a TECBank
+                            </h1>
+
+                            <div class="logo">
+                                <img class="center" style="height: 200px;" src="../../../assets/Img/bank.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </aside>
+    </div>
+
+
+
+</div>
+<div *ngIf="!isloggedIn">
+
+    <app-login></app-login>
+
+</div>

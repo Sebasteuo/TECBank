@@ -3,54 +3,110 @@
     <aside class="col-lg" style="margin: 5% 5% 5% 5%;">
         <div class="card">
             <article class="card-body">
-                <h4 class="card-title mb-4 mt-1">Administración</h4>
+                <h4 class="card-title mb-4 mt-1">Mi cuenta</h4>
                 <hr>
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- table
-                    <div class="col-md-2 ">
-                        <ul class="nav nav-tabs flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" >Gestión de roles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" >Gestión de clientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" >Gestión de cuentas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" >Gestión de tarjetas</a> 
-                            </li>
-                        </ul>
-                    </div> -->
+                    
 
                         <div class="d-flex">
                             <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
                                 <li ngbNavItem="top">
-                                    <a ngbNavLink>Roles</a>
+                                    <a ngbNavLink>Movimientos</a>
                                     <ng-template ngbNavContent>
-                                        <app-roles></app-roles>
+                                        <div class=row>
+                                            <div class="col-md-12">
+                                                <div class=table-wrapper>
+                                                    <table class="table table-hover bike-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Número de Cuenta</th>
+                                                                <th>Fecha</th>
+                                                                <th>Documento</th>
+                                                                <th>Débito</th>
+                                                                <th>Crédito</th>
+                                                                <th>Descripción</th>
+                                                                <th colspan="2"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                        
+                                                                <td></td>
+        
+                                                            </tr>
+                                                        </tbody>
+            
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        
                                     </ng-template>
                                 </li>
                                 <li ngbNavItem="middle">
-                                    <a ngbNavLink>Clientes</a>
+                                    <a ngbNavLink>Transferencias</a>
                                     <ng-template ngbNavContent>
-                                        <app-roles></app-roles>
+                                        <article class="card-body">
+                                            <div class="form">
+                                                <form #form autocomplete="off">
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Seleccione una Cuenta: </label>
+                                                        </div>
+                                                        <div class="col form-group">
+                                                            <div ngbDropdown class="d-inline-block">
+                                                                <button class="btn btn-outline-primary" id="dropdownBasic1"
+                                                                    ngbDropdownToggle>{{selectedAccount}}</button>
+                                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                                                    <button *ngFor="let account of accounts" ngbDropdownItem
+                                                                        (click)="selectAccount(account.id)">{{account}}</button>
+                                                               
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Cuenta de Destino: </label>
+                                                        </div> 
+                                                        <div class="col form-group">
+                                                            <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newTransfer.receiver"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Descripción: </label>
+                                                        </div>
+                                                        <div class="col form-group">
+                                                            <input name="quantity" class="form-control" placeholder="Descripción" [(ngModel)]="newTransfer.description"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Monto: </label>
+                                                        </div>
+                                                        <div class="col form-group">
+                                                            <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newTransfer.ammount"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="col form-groupform-group">
+                                                        <button class="btn btn-primary btn-block" (click)="submit()">Transferir</button>
+                                                    </div>
+            
+                                                </form>
+                                            </div>
+                                        </article>
                                     </ng-template>
                                 </li>
-                                <li ngbNavItem="bottom">
-                                    <a ngbNavLink>Tarjetas</a>
-                                    <ng-template ngbNavContent>
-                                        
-                                    </ng-template>
-                                </li>
-                                <li ngbNavItem="asesores">
-                                    <a ngbNavLink>Asesores</a>
-                                    <ng-template ngbNavContent>
-                                        
-                                    </ng-template>
-                                </li>
+                                
                             </ul>
 
                             <div [ngbNavOutlet]="nav" class="ml-4"></div>

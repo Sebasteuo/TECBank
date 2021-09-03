@@ -10,7 +10,16 @@ export class WelcomeComponent implements OnInit {
 
   constructor() { }
 
+  isloggedIn: boolean=false
   ngOnInit(): void {
+    this.isloggedIn= this.loggedIn()
+  }
+
+  loggedIn() {
+    if (localStorage.getItem('User') != null)
+      return true;
+    else
+      return false;
   }
 
 }

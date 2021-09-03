@@ -9,17 +9,17 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" routerLink="/Roles">Cuentas</a>
+                <a class="nav-link" routerLink="/Cuentas_Cliente">Cuentas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/Roles">Tarjetas</a>
+                <a class="nav-link" routerLink="/Tarjetas_Cliente">Tarjetas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/Roles">Préstamos</a>
+                <a class="nav-link" routerLink="/Prestamos_Cliente">Préstamos</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-secondary my-2 my-sm-0 log-btn">Cerrar sesión</button>
+            <button (click)="logout()"class="btn btn-secondary my-2 my-sm-0 log-btn">Cerrar sesión</button>
         </form>
     </div>
 </nav>

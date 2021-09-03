@@ -9,12 +9,15 @@ import { WithdrawalsComponent } from './Administration/withdrawals/withdrawals.c
 import { LoginComponent } from './Miscellanueous/login/login.component';
 import { RegisterComponent } from './Miscellanueous/register/register.component';
 import { CardsComponent } from './Administration/cards/cards.component';
+import { AccountsComponent } from './Clients/accounts/accounts.component';
+import { ClientCardComponent } from './Clients/client-card/client-card.component';
+import { ClientLoanComponent } from './Clients/client-loan/client-loan.component';
 
 
 //Primer ruta por defecto
 const routes: Routes = [
   //Path es la ruta del URL, y Component es el componente que se debe cargar respectivamente
-  { path: '', redirectTo: 'Login', pathMatch: 'full' }, //Al entrar al localhost, se le agrega a la ruta Welcome
+  { path: '', redirectTo: 'Welcome', pathMatch: 'full' }, //Al entrar al localhost, se le agrega a la ruta Welcome
   { path: 'Welcome', component: WelcomeComponent}, // Se hacen navegables y  los componentes
   { path: 'Roles', component: RolesComponent}, 
   { path: 'Clientes', component: ClientesComponent},
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'Login', component: LoginComponent},
   { path: 'Registro', component: RegisterComponent},
   { path: 'Tarjetas', component: CardsComponent},
+  { path: 'Tarjetas_Cliente', component: ClientCardComponent},
+  { path: 'Cuentas_Cliente', component: AccountsComponent},
+  { path: 'Prestamos_Cliente', component: ClientLoanComponent},
 ];
 
 @NgModule({

@@ -15,12 +15,17 @@ export class AuthenticationService {
       this.Users.forEach(obj=>{
         if(obj.user==user && obj.password==password){
           localStorage.setItem("User", user)
-          localStorage.setItem("UserType", "admin")
-          this.router.navigate(["/Clientes"])
+          localStorage.setItem("UserType", obj.tipo as string)
+          localStorage.setItem("UserId", this.getClientID())
+          this.router.navigate(["/Welcome"])
         }
         
       })    
      
+  }
+
+  getClientID(){
+    return ""
   }
   logout(){
     localStorage.removeItem("User")
