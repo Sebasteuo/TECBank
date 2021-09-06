@@ -1,0 +1,19 @@
+[
+  {
+    "Saldo": "35000000",
+    "FechaDeExpiracion": "1-1-22",
+    "Tipo": "ahorro",
+    "NumeroTarjeta": "123456789",
+    "CodigoSeguridad": "123",
+    "NumeroCuenta": "123456789"
+  },
+  {
+    "Saldo": "9000000",
+    "FechaDeExpiracion": "29-3-23",
+    "Tipo": "corriente",
+    "NumeroTarjeta": "987654321",
+    "CodigoSeguridad": "987",
+    "NumeroCuenta": "987654321"
+  }
+    
+]

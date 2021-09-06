@@ -1,0 +1,19 @@
+
+  [
+    {
+      "idRol": "1",
+      "Nombre": "conserje",
+      "Descripcion": "limpieza del banco"
+    },
+    {
+      "idRol": "2",
+      "Nombre": "cajero",
+      "Descripcion": "cajas del banco"
+    },
+    {
+      "idRol": "3",
+      "Nombre": "gerente",
+      "Descripcion": "maneja el banco"
+    }
+  ]
+

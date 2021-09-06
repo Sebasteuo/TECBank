@@ -1,0 +1,30 @@
+[
+  {
+    "cedula": "123456789",
+    "nombre": "Markku",
+    "apellido_1": "Aleksi",
+    "apellido_2": "Laiho",
+    "usuario": "cob@guitar.com",
+    "password": "childrenofbodom",
+    "provincia": "Heredia",
+    "canton": "Barva",
+    "distrito": "San Pablo",
+    "telefono": "33333333",
+    "ingreso_mensual": "1000000",
+    "tipo": "fisico"
+  },
+  {
+    "cedula": "987654321",
+    "nombre": "Alissa",
+    "apellido_1": "White",
+    "apellido_2": "Gluz",
+    "usuario": "ae@voice.com",
+    "password": "archenemy",
+    "provincia": "Cartago",
+    "canton": "El Guarco",
+    "distrito": "Tejar",
+    "telefono": "99999999",
+    "ingreso_mensual": "2000000",
+    "tipo": "juridico"
+  }
+]

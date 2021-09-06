@@ -1,0 +1,20 @@
+[
+    {
+        "Saldo":"3000000",
+        "Tipo":"Ahorro",
+        "Numero":"123456789",
+        "Descripcion":"Cuenta de ahorros",
+        "Moneda":"dolares",
+        "CedulaCliente":"123456789",
+        "UsuarioCliente":"cob@guitar.com"
+    },
+    {
+        "Saldo":"5000000",
+        "Tipo":"Corriente",
+        "Numero":"987654321",
+        "Descripcion":"Cuenta corriente",
+        "Moneda":"colones",
+        "CedulaCliente":"987654321",
+        "UsuarioCliente":"ae@voice.com"
+    }
+]
