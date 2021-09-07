@@ -1,5 +1,7 @@
 //Clases para el manejo de datos con el API
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { Client } from '../models/client.model';
 
 @Injectable({
@@ -7,13 +9,21 @@ import { Client } from '../models/client.model';
 })
 export class ClientManagementService {
   clients: Client[] = []
-  constructor() { }
+  constructor(public http:HttpClient) { }
   /**
    * 
    * @returns 
    */
-  getClients(){  //Función que obtiene roles SE CAMBIARÀ CON EL API
-    this.clients=[{  Nombre:"Prueba",
+  async getClients(){  //Función que obtiene roles SE CAMBIARÀ CON EL API
+
+    await this.http.get(environment.api+"/cliente").toPromise().then(res=>{
+      this.clients=res as Client[]
+
+    
+    })
+
+    return this.clients
+    /*this.clients=[{  Nombre:"Prueba",
     Apellido1:"Alba",
     Apellido2:"Vives",
     ID:39275482,
@@ -21,19 +31,20 @@ export class ClientManagementService {
     Direccion:"Pitahaya, Agua Caliente",
     Ingresos:"Muchos",
     Usuario:"Sabbi",}];
-    return this.clients;
+    return this.clients;*/
   }
   
   //Envía el ID del cliente que se va a eliminar al API
-  deleteClient(id: number | undefined) {
-    this.clients = this.clients.filter((obj) => obj.ID !== id);
-    return this.clients;
+  async deleteClient(id: number | undefined) {
+    //this.clients = this.clients.filter((obj) => obj.cedula !== id);
+    await this.http.delete(environment.api+'/Cliente/'+id).toPromise().then(res=>{this.getClients().then(result=>{this.clients=result})})
+    return this.clients
   }
 
   //Envía los datos modificados al API (esta función se comporta igual a la que account-management.service)
   editClient(selecter: Client) {
     this.clients.forEach((role,index)=>{
-      if(role.ID==selecter.ID){
+      if(role.cedula==selecter.cedula){
         this.clients[index] = selecter
 
       }

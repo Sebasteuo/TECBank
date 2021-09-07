@@ -11,7 +11,7 @@ namespace TecBank_API.DBMS.File_manager
     public class CuentaManager
     {
         public List<Cuenta> ListaDeCuenta= new List<Cuenta>();
-        private string path = "C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/DBMS/Data/Cuentas.json";
+        private string path = "/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/DBMS/Data/Cuentas.json";
         public CuentaManager()
         {
             listarCuenta();

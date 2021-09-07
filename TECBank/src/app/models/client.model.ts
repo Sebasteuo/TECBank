@@ -1,11 +1,12 @@
 //Atributos para el objeto Cliente
 export class Client {
-    Nombre: string|undefined;
-    Apellido1: string|undefined;
-    Apellido2: string|undefined;
-    ID: number|undefined;
-    Direccion: string|undefined;
-    Telefono: number|undefined;
-    Ingresos: string|undefined;
-    Usuario: string|undefined;
+    nombre: string|undefined;
+    apellido_1: string|undefined;
+    apellido_2: string|undefined;
+    cedula: number|undefined;
+    direccion: string|undefined;
+    telefono: number|undefined;
+    ingreso_mensual: string|undefined;
+    usuario: string|undefined;
+    tipo: string|undefined;
 }

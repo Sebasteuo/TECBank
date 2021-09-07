@@ -62,7 +62,7 @@
                                                                     ngbDropdownToggle>{{selectedAccount}}</button>
                                                                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                                                     <button *ngFor="let account of accounts" ngbDropdownItem
-                                                                        (click)="selectAccount(account.id)">{{account}}</button>
+                                                                        (click)="selectAccount(account.ID)">{{account}}</button>
                                                                
                                                                 </div>
                                                             </div>
@@ -91,7 +91,7 @@
                                                             <label>Monto: </label>
                                                         </div>
                                                         <div class="col form-group">
-                                                            <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newTransfer.ammount"
+                                                            <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newTransfer.amount"
                                                                 required>
                                                         </div>
                                                     </div>

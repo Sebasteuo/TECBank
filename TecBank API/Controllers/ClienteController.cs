@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,33 +15,34 @@ namespace TecBank_API.Controllers
     {
         ClienteManager cm = new ClienteManager();
 
+        [EnableCors("localhost")]
         // GET: api/<ClienteController>
         [HttpGet]
         public List<Cliente> Get()
         {
             return cm.listarClientes();
         }
-
+        [EnableCors("localhost")]
         // GET api/<ClienteController>/5
         [HttpGet("{id}")]
         public Cliente Get(int id)
         {
             return cm.consultarCliente(id);
         }
-
+        [EnableCors("localhost")]
         // POST api/<ClienteController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
-
+        [EnableCors("localhost")]
         // PUT api/<ClienteController>/5
         [HttpPut("{id}")]
         public void Put(int id, string atributoAcambiar, string ValorParaCambiar)
         {
             cm.actualizarCliente(id, atributoAcambiar, ValorParaCambiar);
         }
-
+        [EnableCors("localhost")]
         // DELETE api/<ClienteController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)

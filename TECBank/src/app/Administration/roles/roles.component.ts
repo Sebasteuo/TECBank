@@ -13,31 +13,31 @@ export class RolesComponent implements OnInit {
   constructor(private rolesServices: RoleManagementService) { }
   roles: Role[] = []
   newRole : Role = {
-    ID:0,
-    Nombre : '',
-    Descripcion : ''
+    idRol:0,
+    nombre : '',
+    descripcion : ''
   }
 
   selectedRole : Role = {
-    ID:0,
-    Nombre : '',
-    Descripcion : ''
+    idRol:0,
+    nombre : '',
+    descripcion : ''
   }
 
   editingID: number | undefined = 0;
   ngOnInit(): void { //Función que se ejecuta de primero cuando carga componentes
     
-    this.roles = this.rolesServices.getRoles();
+    this.rolesServices.getRoles().then(res=>{this.roles=res});
   }
 
-  //Envía el ID del rol que se va a eliminar al servicio
-  delete(id : number | undefined){
-    this.roles = this.rolesServices.deleteRole(id);
+  //Envía el idRol del rol que se va a eliminar al servicio
+  delete(idRol : number | undefined){
+    this.roles = this.rolesServices.deleteRole(idRol);
   }
 
   //Hace cajas de texto editables
   edit(role : Role){
-    this.editingID = role.ID;
+    this.editingID = role.idRol;
     this.selectedRole = role;
   }
 
@@ -51,9 +51,9 @@ export class RolesComponent implements OnInit {
   add(){
     this.roles = this.rolesServices.addRole(this.newRole);
     this.newRole = {
-      ID:0,
-      Nombre : '',
-      Descripcion : ''
+      idRol:0,
+      nombre : '',
+      descripcion : ''
     }
   }
 

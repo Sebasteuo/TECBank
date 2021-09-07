@@ -17,7 +17,7 @@
                                                 <label>Rol: </label>
                                             </div>
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Nombre" [(ngModel)]="newRole.Nombre"
+                                                <input name="quantity" class="form-control" placeholder="Nombre" [(ngModel)]="newRole.nombre"
                                                     required>
                                             </div>
                                         </div>
@@ -26,7 +26,7 @@
                                                 <label>Descripción: </label>
                                             </div>
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Descripción" [(ngModel)]="newRole.Descripcion"
+                                                <input name="quantity" class="form-control" placeholder="Descripción" [(ngModel)]="newRole.descripcion"
                                                     required>
                                             </div>
                                         </div>
@@ -59,25 +59,25 @@
                                             </thead>
                                             <tbody>
                                                 <tr *ngFor="let role of this.roles">
-                                                    <td>{{role.ID}}</td>
-                                                    <td *ngIf='editingID != role.ID'>{{role.Nombre}}</td>
-                                                    <td *ngIf='editingID == role.ID'><input value="{{selectedRole.Nombre}}"
-                                                        [(ngModel)]="selectedRole.Nombre" class="form-control"></td>
-                                                    <td *ngIf='editingID != role.ID'>{{role.Descripcion}}</td>
-                                                    <td *ngIf='editingID == role.ID'><input value="{{selectedRole.Descripcion}}"
-                                                        [(ngModel)]="selectedRole.Descripcion" class="form-control"></td>
+                                                    <td>{{role.idRol}}</td>
+                                                    <td *ngIf='editingID != role.idRol'>{{role.nombre}}</td>
+                                                    <td *ngIf='editingID == role.idRol'><input value="{{selectedRole.nombre}}"
+                                                        [(ngModel)]="selectedRole.nombre" class="form-control"></td>
+                                                    <td *ngIf='editingID != role.idRol'>{{role.descripcion}}</td>
+                                                    <td *ngIf='editingID == role.idRol'><input value="{{selectedRole.descripcion}}"
+                                                        [(ngModel)]="selectedRole.descripcion" class="form-control"></td>
                                                     <th scope="row">
-                                                        <button *ngIf='editingID != role.ID' (click)="edit(role)" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID != role.idRol' (click)="edit(role)" class="btn-icon" placement="top"
                                                             ngbTooltip="Editar">
                                                             <i class="fa fa-edit" aria-hidden="true"></i>
                                                         </button>
-                                                        <button *ngIf='editingID == role.ID' (click)="submit()" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID == role.idRol' (click)="submit()" class="btn-icon" placement="top"
                                                             ngbTooltip="Aceptar">
                                                             <i class="fa fa-check" aria-hidden="true"></i>
                                                         </button>
                                                     </th>
                                                     <th scope="row">
-                                                        <button (click)="delete(role.ID)" class="btn-icon" placement="top"
+                                                        <button (click)="delete(role.idRol)" class="btn-icon" placement="top"
                                                             ngbTooltip="Eliminar">
                                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                                         </button>

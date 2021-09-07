@@ -14,7 +14,7 @@ namespace TecBank_API.DBMS.File_manager
     {
 
         public List<Cliente> ListaDeClientes = new List<Cliente>();
-        private string path = "C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/DBMS/Data/clientes.json";
+        private string path = "/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/DBMS/Data/clientes.json";
 
         public ClienteManager()
         {

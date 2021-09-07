@@ -11,7 +11,7 @@ namespace TecBank_API.DBMS.File_manager
     public class EmpleadoManager
     {
         public List<Empleado> ListaDeEmpleado = new List<Empleado>();
-        private string path = "C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/DBMS/Data/empleados.json";
+        private string path = "/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/DBMS/Data/empleados.json";
         public EmpleadoManager()
         {
             listarEmpleados();

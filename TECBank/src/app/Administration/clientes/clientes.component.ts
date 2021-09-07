@@ -15,42 +15,44 @@ export class ClientesComponent implements OnInit {
       //VARIABLES. SINTAXIS= Nombre:Tipo = Valor
    }
   newClient: Client={
-    Nombre:"",
-    Apellido1:"",
-    Apellido2:"",
-    ID:0,
-    Telefono:0,
-    Direccion:"",
-    Ingresos:"",
-    Usuario:"",
+    nombre:"",
+    apellido_1:"",
+    apellido_2:"",
+    cedula:0,
+    telefono:0,
+    direccion:"",
+    ingreso_mensual:"",
+    usuario:"",
+    tipo:"",
     
   }
   selectedClient: Client={
-    Nombre:"",
-    Apellido1:"",
-    Apellido2:"",
-    ID:0,
-    Telefono:0,
-    Direccion:"",
-    Ingresos:"",
-    Usuario:"",
+    nombre:"",
+    apellido_1:"",
+    apellido_2:"",
+    cedula:0,
+    telefono:0,
+    direccion:"",
+    ingreso_mensual:"",
+    usuario:"",
+    tipo:"",
     
   }
   clients: Client[]=[]
   editingID: number | undefined = 0;
   ngOnInit(): void { //Función que se ejecuta de primero cuando carga componentes
     
-    this.clients = this.clientServices.getClients();
+    this.clientServices.getClients().then(res=>this.clients=res);
   }
 
   //Envía el ID del cliente que se va a eliminar al servicio
   delete(id : number | undefined){
-    this.clients = this.clientServices.deleteClient(id);
+      this.clientServices.deleteClient(id).then(res=>{this.clients=res});
   }
 
   //Click en el botón de editar genera cajas de texto para escribir editables
   edit(client : Client){
-    this.editingID = client.ID;
+    this.editingID = client.cedula;
     this.selectedClient = client;
   }
 
@@ -64,14 +66,15 @@ export class ClientesComponent implements OnInit {
   add(){
     this.clients = this.clientServices.addClient(this.newClient);
     this.newClient = {
-      Nombre:"",
-    Apellido1:"",
-    Apellido2:"",
-    ID:0,
-    Telefono:0,
-    Direccion:"",
-    Ingresos:"",
-    Usuario:"",
+      nombre:"",
+      apellido_1:"",
+      apellido_2:"",
+      cedula:0,
+      telefono:0,
+      direccion:"",
+      ingreso_mensual:"",
+      usuario:"",
+      tipo:"",
     }
   }
 

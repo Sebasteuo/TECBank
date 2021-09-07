@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace TecBank_API.Controllers
         RolManager rm = new RolManager();
 
         // GET: api/<RolController>
+        [EnableCors("localhost")]
         [HttpGet]
         public List<Rol> Get()
         {
@@ -21,6 +23,7 @@ namespace TecBank_API.Controllers
         }
 
         // GET api/<RolController>/5
+        [EnableCors("localhost")]
         [HttpGet("{id}")]
         public Rol Get(int id)
         {
@@ -28,19 +31,22 @@ namespace TecBank_API.Controllers
         }
 
         // POST api/<RolController>
+        [EnableCors("localhost")]
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
         // PUT api/<RolController>/5
+        [EnableCors("localhost")]
         [HttpPut("{id}")]
         public void Put(int id, string atributoAcambiar, string ValorParaCambiar)
         {
             rm.actualizarRol(id, atributoAcambiar, ValorParaCambiar);
         }
-
+       
         // DELETE api/<RolController>/5
+        [EnableCors("localhost")]
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

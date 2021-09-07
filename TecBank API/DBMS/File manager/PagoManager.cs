@@ -11,7 +11,7 @@ namespace TecBank_API.DBMS.File_manager
     public class PagoManager
     {
         public List<Pago> ListaDePago= new List<Pago>();
-        private string path = "C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/DBMS/Data/Pagos.json";
+        private string path = "/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/DBMS/Data/Pagos.json";
         public PagoManager()
         {
             listarPagos();

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,27 +16,27 @@ namespace TecBank_API.Controllers
     public class TarjetaController : ControllerBase
     {
         TarjetaManager tm = new TarjetaManager();
-
+        [EnableCors("localhost")]
         // GET: api/<TarjetaController>
         [HttpGet]
         public List<Tarjeta> Get()
         {
             return tm.listarTarjetas();
         }
-
+        [EnableCors("localhost")]
         // GET api/<TarjetaController>/5
         [HttpGet("{id}")]
         public Tarjeta Get(int id)
         {
             return tm.consultarTarjeta(id);
         }
-
+        [EnableCors("localhost")]
         // POST api/<TarjetaController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
-
+        [EnableCors("localhost")]
         // PUT api/<TarjetaController>/5
         [HttpPut("{id}")]
         [HttpPut("{id}")]
@@ -43,7 +44,7 @@ namespace TecBank_API.Controllers
         {
             tm.actualizarTarjeta(id, atributoAcambiar, ValorParaCambiar);
         }
-
+        [EnableCors("localhost")]
         // DELETE api/<TarjetaController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)

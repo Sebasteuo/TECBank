@@ -24,6 +24,7 @@ import { CardsComponent } from './Administration/cards/cards.component';
 import { AccountsComponent } from './Clients/accounts/accounts.component';
 import { ClientCardComponent } from './Clients/client-card/client-card.component';
 import { ClientLoanComponent } from './Clients/client-loan/client-loan.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ClientLoanComponent } from './Clients/client-loan/client-loan.component
     ClientLoanComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

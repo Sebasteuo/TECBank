@@ -12,7 +12,7 @@ export class AccountsComponent implements OnInit {
 
   constructor(private transferService: TransferManagementService) { }
 
-  selectedAccount:string=""
+  selectedAccount:number|undefined=0
   accounts:Account[]=[]
   transfers:Transfer[]=[]
   newTransfer:Transfer={
@@ -43,7 +43,7 @@ export class AccountsComponent implements OnInit {
 
   }
 
-  selectAccount(id:string){
+  selectAccount(id:number|undefined){
     this.selectedAccount=id
   }
 

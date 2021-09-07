@@ -17,8 +17,16 @@ namespace TecBank_API
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
 
+        {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("localhost",
+builder =>
+{
+    builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+});
+            });
             services.AddControllers();
             
         }
@@ -35,6 +43,8 @@ namespace TecBank_API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

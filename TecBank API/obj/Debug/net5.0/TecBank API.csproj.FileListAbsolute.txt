@@ -1,60 +1,90 @@
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\appsettings.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\TecBank API.exe
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\TecBank API.deps.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.dev.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\ref\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\TecBank API.pdb
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.csproj.AssemblyReference.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfoInputs.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfo.cs
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CoreCompileInputs.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.Manifest.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.xml
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\scopedcss\bundle\TecBank API.styles.css
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.RazorTargetAssemblyInfo.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CopyComplete
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\ref\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.pdb
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank API\obj\Debug\net5.0\TecBank API.genruntimeconfig.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.csproj.AssemblyReference.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfoInputs.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfo.cs
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CoreCompileInputs.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\ref\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.pdb
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\appsettings.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\DBMS\Data\clientes.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\DBMS\Data\roles.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\TecBank API.exe
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\TecBank API.deps.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.dev.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\ref\TecBank API.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\TecBank API.pdb
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.Manifest.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.xml
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\scopedcss\bundle\TecBank API.styles.css
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.RazorTargetAssemblyInfo.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CopyComplete
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\obj\Debug\net5.0\TecBank API.genruntimeconfig.cache
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\DBMS\Data\cuentas.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\DBMS\Data\empleados.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\DBMS\Data\pagos.json
-C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank API\TecBank-API\TecBank API\bin\Debug\net5.0\DBMS\Data\tarjetas.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/appsettings.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/TecBank API.exe
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/TecBank API.deps.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.dev.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/ref/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/TecBank API.pdb
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/Microsoft.OpenApi.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.csproj.AssemblyReference.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfoInputs.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfo.cs
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CoreCompileInputs.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.Manifest.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.xml
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/scopedcss/bundle/TecBank API.styles.css
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.RazorTargetAssemblyInfo.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CopyComplete
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/ref/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.pdb
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank API/obj/Debug/net5.0/TecBank API.genruntimeconfig.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.csproj.AssemblyReference.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfoInputs.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfo.cs
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CoreCompileInputs.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/ref/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.pdb
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/appsettings.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/DBMS/Data/clientes.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/DBMS/Data/roles.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/TecBank API.exe
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/TecBank API.deps.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.dev.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/ref/TecBank API.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/TecBank API.pdb
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/Newtonsoft.Json.dll
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.Manifest.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.xml
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/scopedcss/bundle/TecBank API.styles.css
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.RazorTargetAssemblyInfo.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CopyComplete
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/obj/Debug/net5.0/TecBank API.genruntimeconfig.cache
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/DBMS/Data/cuentas.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/DBMS/Data/empleados.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/DBMS/Data/pagos.json
+C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank API/bin/Debug/net5.0/DBMS/Data/tarjetas.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/appsettings.Development.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/appsettings.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/clientes.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/cuentas.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/empleados.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/pagos.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/roles.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/tarjetas.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.deps.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.dev.json
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.dll
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/ref/TecBank API.dll
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.pdb
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.csproj.AssemblyReference.cache
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfoInputs.cache
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfo.cs
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CoreCompileInputs.cache
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.MvcApplicationPartsAssemblyInfo.cache
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.Manifest.cache
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.xml
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/scopedcss/bundle/TecBank API.styles.css
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.RazorTargetAssemblyInfo.cache
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CopyComplete
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.dll
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/ref/TecBank API.dll
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.pdb
+/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.genruntimeconfig.cache

@@ -1,5 +1,7 @@
 //Clases para manejar los Roles
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { Role } from '../models/role.model';
 
 @Injectable({
@@ -7,22 +9,27 @@ import { Role } from '../models/role.model';
 })
 export class RoleManagementService {
   roles: Role[]= []
-  constructor() { }
-  getRoles(){  //Función que obtiene roles SE CAMBIARÀ CON EL API
-    this.roles=[{ID:1, Nombre:"Administrador", Descripcion: "Jefe"},{ID:2, Nombre:"Cliente", Descripcion: "Probador"}];
+  constructor(public http:HttpClient) { }
+  async getRoles(){  //Función que obtiene roles SE CAMBIARÀ CON EL API
+    //this.roles=[{idRol:1, nombre:"Administrador", descripcion: "Jefe"},{idRol:2, nombre:"Cliente", descripcion: "Probador"}];
+    await this.http.get(environment.api+"/rol").toPromise().then(res=>{
+      this.roles=res as Role[]
+
+    
+    })
     return this.roles;
   }
   
-  //Envía al API el ID del rol eliminado
-  deleteRole(id: number | undefined) {
-    this.roles = this.roles.filter((obj) => obj.ID !== id);
+  //Envía al API el idRol del rol eliminado
+  deleteRole(idRol: number | undefined) {
+    this.roles = this.roles.filter((obj) => obj.idRol !== idRol);
     return this.roles;
   }
 
-  //Envía al API el ID del rol Editado
+  //Envía al API el idRol del rol Editado
   editRole(selecter: Role) {
     this.roles.forEach((role,index)=>{
-      if(role.ID==selecter.ID){
+      if(role.idRol==selecter.idRol){
         this.roles[index] = selecter
 
       }
@@ -31,9 +38,9 @@ export class RoleManagementService {
     return this.roles
   }
 
-  //Envía al API el ID del rol agregado
+  //Envía al API el idRol del rol agregado
   addRole(role : Role){
-    role.ID = this.roles.length + 1;
+    role.idRol = this.roles.length + 1;
     this.roles.push(role);
     return this.roles;
   }

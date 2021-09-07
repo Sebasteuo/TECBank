@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace TecBank_API.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
-        
+        [EnableCors("localhost")]
         [HttpGet]
         public String Get()
         {
