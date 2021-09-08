@@ -11,7 +11,7 @@ namespace TecBank_API
     public class RolManager
     {
         public List<Rol> ListaDeRoles = new List<Rol>();
-        private string path = "/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/DBMS/Data/roles.json";
+        private string path = "C:/GitHub/TECbank/TecBank API/DBMS/Data/roles.json";
         public RolManager()
         {
             listarRoles();

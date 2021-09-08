@@ -13,16 +13,19 @@ export class WithdrawalsComponent implements OnInit {
 
   constructor(private accountservice:AccountManagementService) { }
   accounts: Account[] = [] //Contiene la lista con todas las cuentas bancarias
-  selectedAccount: Account={ ID:0,
-    Descripcion : '',
-    Tipo: 0,
-    Moneda: 0,
-    Cliente:0}
+  selectedAccount: Account={ numero:0,
+    descripcion : '',
+    tipo: 0,
+    moneda: 0,
+    cedulaCliente:0,
+    saldo:0,
+    usuarioCliente:"",
+  }
   newline: BalanceLine={movimiento:0};
   selectedValue: number|undefined=0
   selectedMovimiento: string= "Retiro"
   ngOnInit(): void {
-    this.accounts=this.accountservice.getAccount()
+    this.accountservice.getAccount().then(res=>{this.accounts=res})
   }
   selectValue(value:number|undefined){
     this.selectedValue=value

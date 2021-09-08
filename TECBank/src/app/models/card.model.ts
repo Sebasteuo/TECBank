@@ -1,8 +1,8 @@
 export class Card {
-    id:number| undefined 
+    numeroTarjeta:number| undefined 
     tipo:number| undefined
-    fechaExpiracion:string| undefined
+    fechaDeExpiracion:string| undefined
     codigoSeguridad:number| undefined
     saldo:number|undefined
-    cliente:number|undefined
+    numeroCuenta:number|undefined
 }

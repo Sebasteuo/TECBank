@@ -21,9 +21,9 @@ export class RoleManagementService {
   }
   
   //Envía al API el idRol del rol eliminado
-  deleteRole(idRol: number | undefined) {
-    this.roles = this.roles.filter((obj) => obj.idRol !== idRol);
-    return this.roles;
+  async deleteRole(idRol: number | undefined) {
+    await this.http.delete(environment.api+'/Rol/'+idRol).toPromise().then(res=>{this.getRoles().then(result=>{this.roles=result})})
+    return this.roles
   }
 
   //Envía al API el idRol del rol Editado

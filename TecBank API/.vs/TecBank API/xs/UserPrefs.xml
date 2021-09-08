@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{3CFC0435-CED7-4DDE-BFE4-CA24943B2F09}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DBMS/File manager/ClienteManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/PagoController.cs">
     <Files>
       <File FileName="Controllers/ClienteController.cs" Line="38" Column="34" />
-      <File FileName="DBMS/File manager/ClienteManager.cs" Line="17" Column="115" />
+      <File FileName="DBMS/File manager/ClienteManager.cs" />
       <File FileName="DBMS/File manager/CuentaManager.cs" />
       <File FileName="DBMS/File manager/EmpleadoManager.cs" />
       <File FileName="DBMS/File manager/PagoManager.cs" />
@@ -11,10 +11,19 @@
       <File FileName="Startup.cs" />
       <File FileName="Controllers/RolController.cs" />
       <File FileName="Controllers/TarjetaController.cs" />
-      <File FileName="Controllers/PagoController.cs" />
+      <File FileName="Controllers/PagoController.cs" Line="1" Column="1" />
       <File FileName="Controllers/HomeController.cs" />
       <File FileName="Controllers/EmpleadoController.cs" />
       <File FileName="Controllers/CuentaController.cs" />
+      <File FileName="DBMS/Data/roles.json" />
+      <File FileName="DBMS/Data/tarjetas.json" />
+      <File FileName="DBMS/Data/pagos.json" />
+      <File FileName="DBMS/Data/empleados.json" />
+      <File FileName="DBMS/Data/cuentas.json" />
+      <File FileName="DBMS/Data/clientes.json" />
+      <File FileName="Program.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Properties/launchSettings.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,6 +35,8 @@
                 <Node name="Data" expanded="True" />
                 <Node name="File manager" expanded="True" />
               </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>

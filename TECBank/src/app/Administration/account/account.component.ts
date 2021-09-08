@@ -25,26 +25,30 @@ export class AccountComponent implements OnInit {
   //Variable de tipo de creación propia (modelos) (En este caso la variable es de tipo Account)
   //Lo que va entre las llaves es un JSON. Un objeto JSON siempre inicia con llaves, los valores se asignan con ':' y se debe separar con coma
   newAccount : Account = {
-    ID:0,
-    Descripcion : '',
-    Tipo: 0,
-    Moneda: 0,
-    Cliente:0
+    numero:0,
+    descripcion : '',
+    tipo: 0,
+    moneda: 0,
+    cedulaCliente:0,
+    saldo: 0,
+    usuarioCliente: "",
   }
   //Variable de tipo de creación propia (modelos) (En este caso la variable es de tipo Account)
   selectedAccount : Account = {
-    ID:0,
-    Descripcion : '',
-    Tipo: 0,
-    Moneda: 0,
-    Cliente:0
+    numero:0,
+    descripcion : '',
+    tipo: 0,
+    moneda: 0,
+    cedulaCliente:0,
+    saldo: 0,
+    usuarioCliente: "",
   }
 
 
   editingID: number | undefined = 0; //Variable que contiene el ID del item que se está editando
   ngOnInit(): void { //Función que se ejecuta de primero cuando carga componentes
     
-    this.accounts = this.accountservice.getAccount();
+     this.accountservice.getAccount().then(res=>{this.accounts=res});
   }
 
   //Funciones Select para que los DropDownList funcionen, reciben los valores seleccionados del botón
@@ -61,15 +65,15 @@ export class AccountComponent implements OnInit {
     this.editTipoID = ID
   }
   delete(id : number | undefined){
-    this.accounts = this.accountservice.deleteAccount(id);
+     this.accountservice.deleteAccount(id).then(res=>{ this.accounts = res});
   }
 
 
   //Recibe los datos de la cuenta que se quieren modificar y controla la variable editingID(controla si aparecen las cajas de texto)
   edit(account : Account){
-    this.editingID = account.ID;
+    this.editingID = account.numero;
     this.selectedAccount = account;
-    if(account.Tipo==1){ //IF para mostrar texto en lugar de un ID
+    if(account.tipo==1){ //IF para mostrar texto en lugar de un ID
         this.editTipo = "Corriente"
         this.editTipoID = 1
     }
@@ -81,7 +85,7 @@ export class AccountComponent implements OnInit {
 
   //Envía los datos de la cuenta modificada al servicio
   submit(){
-    this.selectedAccount.Tipo = this.editTipoID
+    this.selectedAccount.tipo = this.editTipoID
     this.editingID = 0;
     this.accounts = this.accountservice.editAccount(this.selectedAccount)
 
@@ -89,15 +93,17 @@ export class AccountComponent implements OnInit {
 
   //Envía los datos de una nueva cuenta al servicio y restablece las cajas de texto
   add(){
-    this.newAccount.Moneda=this.selectedValueID;
-    this.newAccount.Tipo=this.selectedTypeID;
+    this.newAccount.moneda=this.selectedValueID;
+    this.newAccount.tipo=this.selectedTypeID;
     this.accounts = this.accountservice.addAccount(this.newAccount);
     this.newAccount = {
-      ID:0,
-      Descripcion : '',
-      Tipo: 0,
-      Moneda: 0,
-      Cliente:0
+      numero:0,
+      descripcion : '',
+      tipo: 0,
+      moneda: 0,
+      cedulaCliente:0,
+      saldo: 0,
+      usuarioCliente: "",
     }
   }
 

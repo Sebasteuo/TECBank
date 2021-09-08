@@ -17,7 +17,7 @@
                                                 <label>Numero de Cuenta: </label>
                                             </div> 
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newAccount.ID"
+                                                <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newAccount.numero"
                                                     required>
                                             </div>
                                         </div>
@@ -26,7 +26,7 @@
                                                 <label>Descripción: </label>
                                             </div>
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Descripción" [(ngModel)]="newAccount.Descripcion"
+                                                <input name="quantity" class="form-control" placeholder="Descripción" [(ngModel)]="newAccount.descripcion"
                                                     required>
                                             </div>
                                         </div>
@@ -35,10 +35,21 @@
                                                 <label>Cliente: </label>
                                             </div>
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newAccount.Cliente"
+                                                <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newAccount.cedulaCliente"
                                                     required>
                                             </div>
                                         </div>
+
+                                        <div class="form-row">
+                                            <div class="col form-group">
+                                                <label>Saldo: </label>
+                                            </div>
+                                            <div class="col form-group">
+                                                <input name="quantity" class="form-control" placeholder="Saldo" [(ngModel)]="newAccount.saldo"
+                                                    required>
+                                            </div>
+                                        </div>
+
                                         <div class="form-row">
                                             <div class="col form-group">
                                                 <label>Moneda: </label>
@@ -98,6 +109,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>Cuenta</th>
+                                                    <th>Saldo</th>
                                                     <th>Descripción</th>
                                                     <th>Cliente</th>
                                                     <th>Tipo</th>
@@ -108,25 +120,27 @@
                                             <tbody>
                                                 <tr *ngFor="let account of this.accounts">
                             
-                                                    <td *ngIf='editingID != account.ID'>{{account.ID}}</td>
-                                                    <td *ngIf='editingID == account.ID'>{{account.ID}}</td>
-                                                    <td *ngIf='editingID != account.ID'>{{account.Descripcion}}</td>
-                                                    <td *ngIf='editingID == account.ID'><input value="{{selectedAccount.Descripcion}}"
-                                                        [(ngModel)]="selectedAccount.Descripcion" class="form-control"></td>
+                                                    <td *ngIf='editingID != account.numero'>{{account.numero}}</td>
+                                                    <td *ngIf='editingID == account.numero'>{{account.numero}}</td>
+                                                    <td *ngIf='editingID != account.numero'>{{account.saldo}}</td>
+                                                    <td *ngIf='editingID == account.numero'>{{account.saldo}}</td>
+                                                    <td *ngIf='editingID != account.numero'>{{account.descripcion}}</td>
+                                                    <td *ngIf='editingID == account.numero'><input value="{{selectedAccount.descripcion}}"
+                                                        [(ngModel)]="selectedAccount.descripcion" class="form-control"></td>
                                                     
-                                                    <td *ngIf='editingID != account.Cliente'>{{account.Cliente}}</td>
-                                                    <td *ngIf='editingID == account.Cliente'>{{account.Cliente}}</td>
-                                                    <td *ngIf='editingID != account.ID'>
-                                                        <div *ngIf='account.Tipo==1'>
+                                                    <td *ngIf='editingID != account.cedulaCliente'>{{account.cedulaCliente}}</td>
+                                                    <td *ngIf='editingID == account.cedulaCliente'>{{account.cedulaCliente}}</td>
+                                                    <td *ngIf='editingID != account.numero'>
+                                                        <div *ngIf='account.tipo==1'>
                                                             Corriente
 
                                                         </div>
-                                                        <div *ngIf='account.Tipo==2'>
+                                                        <div *ngIf='account.tipo==2'>
                                                             Ahorros
 
                                                         </div>
                                                     </td>
-                                                    <td *ngIf='editingID == account.ID'>
+                                                    <td *ngIf='editingID == account.numero'>
                                                         <div ngbDropdown class="d-inline-block">
                                                             <button class="btn btn-outline-primary" id="dropdownBasic1"
                                                                 ngbDropdownToggle>{{editTipo}}</button>
@@ -138,34 +152,34 @@
                                                             </div>
                                                         </div>
                                                         </td>
-                                                    <td *ngIf='editingID != account.Cliente'>
-                                                        <div *ngIf='account.Moneda==1'>
+                                                    <td *ngIf='editingID != account.cedulaCliente'>
+                                                        <div *ngIf='account.moneda==1'>
                                                             Colones
 
                                                         </div>
-                                                        <div *ngIf='account.Moneda==2'>
+                                                        <div *ngIf='account.moneda==2'>
                                                             Dolares
 
                                                         </div>
-                                                        <div *ngIf='account.Moneda==3'>
+                                                        <div *ngIf='account.moneda==3'>
                                                             Euros
 
                                                         </div>
                                                     </td>
-                                                    <td *ngIf='editingID == account.Cliente'>{{account.Moneda}}</td>
+                                                    <td *ngIf='editingID == account.cedulaCliente'>{{account.moneda}}</td>
 
                                                     <th scope="row">
-                                                        <button *ngIf='editingID != account.ID' (click)="edit(account)" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID != account.numero' (click)="edit(account)" class="btn-icon" placement="top"
                                                             ngbTooltip="Editar">
                                                             <i class="fa fa-edit" aria-hidden="true"></i>
                                                         </button>
-                                                        <button *ngIf='editingID == account.ID' (click)="submit()" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID == account.numero' (click)="submit()" class="btn-icon" placement="top"
                                                             ngbTooltip="Aceptar">
                                                             <i class="fa fa-check" aria-hidden="true"></i>
                                                         </button>
                                                     </th>
                                                     <th scope="row">
-                                                        <button (click)="delete(account.ID)" class="btn-icon" placement="top"
+                                                        <button (click)="delete(account.numero)" class="btn-icon" placement="top"
                                                             ngbTooltip="Eliminar">
                                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                                         </button>

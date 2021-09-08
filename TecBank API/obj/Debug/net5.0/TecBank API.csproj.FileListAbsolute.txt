@@ -88,3 +88,65 @@ C:/Users/Bojorge/Documents/BasesDeDatos/Tareas/TecBank API/TecBank-API/TecBank A
 /Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/ref/TecBank API.dll
 /Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.pdb
 /Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.genruntimeconfig.cache
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/appsettings.Development.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/appsettings.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/clientes.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/cuentas.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/empleados.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/pagos.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/roles.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/DBMS/Data/tarjetas.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.exe
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.deps.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.runtimeconfig.dev.json
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.dll
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/ref/TecBank API.dll
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/TecBank API.pdb
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/bin/Debug/net5.0/Newtonsoft.Json.dll
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.csproj.AssemblyReference.cache
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.GeneratedMSBuildEditorConfig.editorconfig
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfoInputs.cache
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.AssemblyInfo.cs
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CoreCompileInputs.cache
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.MvcApplicationPartsAssemblyInfo.cache
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.Manifest.cache
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/staticwebassets/TecBank API.StaticWebAssets.xml
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/scopedcss/bundle/TecBank API.styles.css
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.RazorTargetAssemblyInfo.cache
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.csproj.CopyComplete
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.dll
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/ref/TecBank API.dll
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.pdb
+//Mac/Home/Documents/GitHub/TECbank/TecBank API/obj/Debug/net5.0/TecBank API.genruntimeconfig.cache
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\appsettings.Development.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\appsettings.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\clientes.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\cuentas.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\empleados.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\pagos.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\roles.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\tarjetas.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\TecBank API.exe
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\TecBank API.deps.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.dev.json
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\TecBank API.dll
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\ref\TecBank API.dll
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\TecBank API.pdb
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.csproj.AssemblyReference.cache
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfoInputs.cache
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfo.cs
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CoreCompileInputs.cache
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.MvcApplicationPartsAssemblyInfo.cache
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.Manifest.cache
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.xml
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\scopedcss\bundle\TecBank API.styles.css
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.RazorTargetAssemblyInfo.cache
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CopyComplete
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.dll
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\ref\TecBank API.dll
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.pdb
+C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.genruntimeconfig.cache

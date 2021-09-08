@@ -17,7 +17,7 @@
                                                 <label>Número de Tarjeta: </label>
                                             </div> 
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Tarjeta" [(ngModel)]="newCard.id"
+                                                <input name="quantity" class="form-control" placeholder="Tarjeta" [(ngModel)]="newCard.numeroTarjeta"
                                                     required>
                                             </div>
                                         </div>
@@ -26,7 +26,7 @@
                                                 <label>Fecha de Expiración: </label>
                                             </div>
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Fecha de Expiración" [(ngModel)]="newCard.fechaExpiracion"
+                                                <input name="quantity" class="form-control" placeholder="Fecha de Expiración" [(ngModel)]="newCard.fechaDeExpiracion"
                                                     required>
                                             </div>
                                         </div>
@@ -45,7 +45,7 @@
                                                 <label>Cliente: </label>
                                             </div>
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newCard.cliente"
+                                                <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newCard.numeroCuenta"
                                                     required>
                                             </div>
                                         </div>
@@ -99,15 +99,15 @@
                                             <tbody>
                                                 <tr *ngFor="let card of this.cards">
                             
-                                                    <td *ngIf='editingID != card.id'>{{card.id}}</td>
-                                                    <td *ngIf='editingID == card.id'>{{card.id}}</td>
-                                                    <td *ngIf='editingID != card.id'>{{card.fechaExpiracion}}</td>
-                                                    <td *ngIf='editingID == card.id'><input value="{{selectedCard.fechaExpiracion}}"
-                                                        [(ngModel)]="selectedCard.fechaExpiracion" class="form-control"></td>
+                                                    <td *ngIf='editingID != card.numeroTarjeta'>{{card.numeroTarjeta}}</td>
+                                                    <td *ngIf='editingID == card.numeroTarjeta'>{{card.numeroTarjeta}}</td>
+                                                    <td *ngIf='editingID != card.numeroTarjeta'>{{card.fechaDeExpiracion}}</td>
+                                                    <td *ngIf='editingID == card.numeroTarjeta'><input value="{{selectedCard.fechaDeExpiracion}}"
+                                                        [(ngModel)]="selectedCard.fechaDeExpiracion" class="form-control"></td>
                                                     
-                                                    <td *ngIf='editingID != card.id'>{{card.cliente}}</td>
-                                                    <td *ngIf='editingID == card.id'>{{card.cliente}}</td>
-                                                    <td *ngIf='editingID != card.id'>
+                                                    <td *ngIf='editingID != card.numeroTarjeta'>{{card.numeroCuenta}}</td>
+                                                    <td *ngIf='editingID == card.numeroTarjeta'>{{card.numeroCuenta}}</td>
+                                                    <td *ngIf='editingID != card.numeroTarjeta'>
                                                         <div *ngIf='card.tipo==1'>
                                                             Débito
 
@@ -117,7 +117,7 @@
 
                                                         </div>
                                                     </td>
-                                                    <td *ngIf='editingID == card.id'>
+                                                    <td *ngIf='editingID == card.numeroTarjeta'>
                                                         <div *ngIf='card.tipo==1'>
                                                             Débito
 
@@ -128,22 +128,22 @@
                                                         </div>
                                                     </td>
                                                     
-                                                    <td *ngIf='editingID != card.id'>{{card.codigoSeguridad}}</td>
-                                                    <td *ngIf='editingID == card.id'><input value="{{selectedCard.codigoSeguridad}}"
+                                                    <td *ngIf='editingID != card.numeroTarjeta'>{{card.codigoSeguridad}}</td>
+                                                    <td *ngIf='editingID == card.numeroTarjeta'><input value="{{selectedCard.codigoSeguridad}}"
                                                         [(ngModel)]="selectedCard.codigoSeguridad" class="form-control"></td>
 
                                                     <th scope="row">
-                                                        <button *ngIf='editingID != card.id' (click)="edit(card)" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID != card.numeroTarjeta' (click)="edit(card)" class="btn-icon" placement="top"
                                                             ngbTooltip="Editar">
                                                             <i class="fa fa-edit" aria-hidden="true"></i>
                                                         </button>
-                                                        <button *ngIf='editingID == card.id' (click)="submit()" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID == card.numeroTarjeta' (click)="submit()" class="btn-icon" placement="top"
                                                             ngbTooltip="Aceptar">
                                                             <i class="fa fa-check" aria-hidden="true"></i>
                                                         </button>
                                                     </th>
                                                     <th scope="row">
-                                                        <button (click)="delete(card.id)" class="btn-icon" placement="top"
+                                                        <button (click)="delete(card.numeroTarjeta)" class="btn-icon" placement="top"
                                                             ngbTooltip="Eliminar">
                                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                                         </button>

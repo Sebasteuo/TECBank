@@ -1,10 +1,12 @@
 //Atributos para el objeto cuenta
 export class Account {
-    ID: number|undefined;
-    Descripcion: string|undefined;
-    Moneda: number|undefined;
-    Tipo: number|undefined;
-    Cliente: number|undefined;
+    saldo: number|undefined
+    numero: number|undefined;
+    descripcion: string|undefined;
+    moneda: number|undefined;
+    tipo: number|undefined;
+    cedulaCliente: number|undefined;
+    usuarioCliente: string|undefined;
 
 
 }

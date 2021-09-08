@@ -32,7 +32,7 @@ export class RolesComponent implements OnInit {
 
   //Envía el idRol del rol que se va a eliminar al servicio
   delete(idRol : number | undefined){
-    this.roles = this.rolesServices.deleteRole(idRol);
+     this.rolesServices.deleteRole(idRol).then(res=>{ this.roles=res });
   }
 
   //Hace cajas de texto editables

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ouEibQdLDJ8t0Em1EqEZteEHIcMYzmNiO8gcXJJrU2FH1f3eA7VwoiRYhC1JaZ4FuIOI52A1CiSTNOmzDMT9hg==",
+  "dgSpecHash": "zP5zpnBV6ob4Rw4dYDjBM6mZH+d60MeYqGhaFYesLLOYFVsbhaptnf/2PkZLPXvhBtDZ0NHKDXAFTUcxeRGwqQ==",
   "success": true,
-  "projectFilePath": "/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/TecBank API.csproj",
+  "projectFilePath": "C:\\GitHub\\TECbank\\TecBank API\\TecBank API.csproj",
   "expectedPackageFiles": [
-    "/Users/sebastianalba/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\sebastianalba\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

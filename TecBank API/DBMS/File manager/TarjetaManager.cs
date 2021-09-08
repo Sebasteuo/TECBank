@@ -12,7 +12,7 @@ namespace TecBank_API.DBMS.File_manager
     public class TarjetaManager
     {
         public List<Tarjeta> ListaDeTarjeta= new List<Tarjeta>();
-        private string path = "/Users/sebastianalba/Documents/GitHub/TECbank/TecBank API/DBMS/Data/Tarjetas.json";
+        private string path = "C:/GitHub/TECbank/TecBank API/DBMS/Data/tarjetas.json";
         public TarjetaManager()
         {
             listarTarjetas();
