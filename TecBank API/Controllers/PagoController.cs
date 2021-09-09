@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,9 +38,10 @@ namespace TecBank_API.Controllers
         [EnableCors("localhost")]
         // PUT api/<PagoController>/5
         [HttpPut("{id}")]
-        public void Put(int id, string atributoAcambiar, string ValorParaCambiar)
+        public void Put(string PagoParaCambiar)
         {
-            pm.actualizarPago(id, atributoAcambiar, ValorParaCambiar);
+            Pago pago = JsonConvert.DeserializeObject<Pago>(PagoParaCambiar);
+            pm.actualizarPago(pago);
         }
         [EnableCors("localhost")]
         // DELETE api/<PagoController>/5

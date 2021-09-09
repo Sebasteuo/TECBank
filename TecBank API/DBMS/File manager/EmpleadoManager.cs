@@ -55,8 +55,8 @@ namespace TecBank_API.DBMS.File_manager
             {
                 if (this.ListaDeEmpleado[i].IdEmpleado == IdEmpleado)
                 {
-                    this.ListaDeEmpleado.RemoveAt(index);
                     index = i;
+                    this.ListaDeEmpleado.RemoveAt(index);
                     break;
                 }
             }
@@ -117,31 +117,20 @@ namespace TecBank_API.DBMS.File_manager
             guardarEmpleado();//guarde el item
         }
 
-        public void actualizarEmpleado(int llave, string atributoAcambiar, int ValorParaCambiar)
+        public void actualizarEmpleado(Empleado empleado)
         {
             int index = 0;
             for (int i = 0; i < this.ListaDeEmpleado.Count; i++)
             {
-                if (this.ListaDeEmpleado[i].IdEmpleado == llave)//llave== llave
+                if (this.ListaDeEmpleado[i].Cedula == empleado.Cedula)
                 {
                     index = i;
                     break;
                 }
             }
-            Empleado item = this.ListaDeEmpleado[index];
-            switch (atributoAcambiar)
-            {
-                case "Cedula":
-                    item.Cedula = ValorParaCambiar;
-                    break;
-                case "IdEmpleado":
-                    item.IdEmpleado = ValorParaCambiar;
-                    break;
-                default:
-                    break;
+            this.ListaDeEmpleado[index] = empleado;
 
-            }
-            guardarEmpleado();//guarde el item
+            guardarEmpleado();
         }
 
         //fin clase

@@ -51,8 +51,8 @@ namespace TecBank_API
             {
                 if (this.ListaDeRoles[i].IdRol == IdRol)
                 {
-                    this.ListaDeRoles.RemoveAt(index);
                     index = i;
+                    this.ListaDeRoles.RemoveAt(index);
                     break;
                 }
             }
@@ -111,6 +111,22 @@ namespace TecBank_API
                 default:
                     break;
             }
+            guardarRol();
+        }
+
+        public void actualizarRol(Rol rol)
+        {
+            int index = 0;
+            for (int i = 0; i < this.ListaDeRoles.Count; i++)
+            {
+                if (this.ListaDeRoles[i].IdRol == rol.IdRol)
+                {
+                    index = i;
+                    break;
+                }
+            }
+            this.ListaDeRoles[index] = rol;
+
             guardarRol();
         }
     }

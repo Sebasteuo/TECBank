@@ -53,8 +53,8 @@ namespace TecBank_API.DBMS.File_manager
             {
                 if (this.ListaDePago[i].IdPago == IdPago)
                 {
-                    this.ListaDePago.RemoveAt(index);
                     index = i;
+                    this.ListaDePago.RemoveAt(index);
                     break;
                 }
             }
@@ -111,30 +111,21 @@ namespace TecBank_API.DBMS.File_manager
             }
             guardarPago();//guarde el item
         }
-        public void actualizarPago(int llave, string atributoAcambiar, int ValorParaCambiar)
+
+        public void actualizarPago(Pago pago)
         {
             int index = 0;
             for (int i = 0; i < this.ListaDePago.Count; i++)
             {
-                if (this.ListaDePago[i].IdPago == llave)//llave== llave
+                if (this.ListaDePago[i].IdPago == pago.IdPago)
                 {
                     index = i;
                     break;
                 }
             }
-            Pago
-            item = this.ListaDePago[index];
-            switch (atributoAcambiar)
-            {
-                case "IdPago":
-                    item.IdPago = ValorParaCambiar;
-                    break;
-                
-                default:
-                    break;
+            this.ListaDePago[index] = pago;
 
-            }
-            guardarPago();//guarde el item
+            guardarPago();
         }
 
         //fin clase
