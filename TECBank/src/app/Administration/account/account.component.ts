@@ -32,6 +32,7 @@ export class AccountComponent implements OnInit {
     cedulaCliente:0,
     saldo: 0,
     usuarioCliente: "",
+    numeroCuenta: 0,
   }
   //Variable de tipo de creación propia (modelos) (En este caso la variable es de tipo Account)
   selectedAccount : Account = {
@@ -42,6 +43,7 @@ export class AccountComponent implements OnInit {
     cedulaCliente:0,
     saldo: 0,
     usuarioCliente: "",
+    numeroCuenta: 0,
   }
 
 
@@ -71,7 +73,7 @@ export class AccountComponent implements OnInit {
 
   //Recibe los datos de la cuenta que se quieren modificar y controla la variable editingID(controla si aparecen las cajas de texto)
   edit(account : Account){
-    this.editingID = account.numero;
+    this.editingID = account.numeroCuenta;
     this.selectedAccount = account;
     if(account.tipo==1){ //IF para mostrar texto en lugar de un ID
         this.editTipo = "Corriente"
@@ -104,6 +106,7 @@ export class AccountComponent implements OnInit {
       cedulaCliente:0,
       saldo: 0,
       usuarioCliente: "",
+      numeroCuenta: 0,
     }
   }
 

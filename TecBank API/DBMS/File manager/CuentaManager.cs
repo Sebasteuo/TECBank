@@ -131,6 +131,26 @@ namespace TecBank_API.DBMS.File_manager
             guardarCuenta();
         }
 
+        public List<Cuenta> consultarCuentaPorCliente(int CedulaCliente)//valor llave
+        {
+            List<Cuenta> Lista = new List<Cuenta>();
+            Cuenta item = new Cuenta();
+            int index = 0;
+            for (int i = 0; i < this.ListaDeCuenta.Count; i++)
+            {
+                if (this.ListaDeCuenta[i].CedulaCliente == CedulaCliente)//llave== llave
+                {
+                    Lista.Add(this.ListaDeCuenta[i]);
+               
+                }
+            }
+       
+
+            
+            return Lista;
+
+        }
+
 
     }
 }

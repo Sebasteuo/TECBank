@@ -25,6 +25,8 @@ import { AccountsComponent } from './Clients/accounts/accounts.component';
 import { ClientCardComponent } from './Clients/client-card/client-card.component';
 import { ClientLoanComponent } from './Clients/client-loan/client-loan.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReporteComponent } from './Administration/reporte/reporte.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
     AccountsComponent,
     ClientCardComponent,
     ClientLoanComponent,
+    ReporteComponent,
   ],
   imports: [
     HttpClientModule,
@@ -52,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     ToastrModule.forRoot(), // ToastrModule added
     FlatpickrModule.forRoot({ locale: Spanish }),
-    FormsModule
+    FormsModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

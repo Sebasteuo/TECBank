@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Account } from 'src/app/models/account.model';
 import { Transfer } from 'src/app/models/transfer.model';
+import { AccountManagementService } from 'src/app/Services/account-management.service';
 import { TransferManagementService } from 'src/app/Services/transfer-management.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { TransferManagementService } from 'src/app/Services/transfer-management.
 })
 export class AccountsComponent implements OnInit {
 
-  constructor(private transferService: TransferManagementService) { }
+  constructor(private transferService: TransferManagementService, private accountService: AccountManagementService) { }
 
   selectedAccount:number|undefined=0
   accounts:Account[]=[]
@@ -27,6 +28,7 @@ export class AccountsComponent implements OnInit {
   active = 1
   ngOnInit(): void {
     this.transfers=this.transferService.getTransfers(localStorage.getItem("UserId") as string )
+    this.accountService.getAccount().then(res=>{this.accounts=res})
   }
 
   submit(){

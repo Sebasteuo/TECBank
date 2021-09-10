@@ -1,1 +1,22 @@
-[{"Saldo":3000000,"Numero":123456789,"Descripcion":"Cuenta de ahorros","CedulaCliente":123456789,"NumeroCuenta":0,"Tipo":"1","Moneda":"1","UsuarioCliente":"cob@guitar.com"},{"Saldo":5000000,"Numero":987654321,"Descripcion":"Cuenta corriente","CedulaCliente":987654321,"NumeroCuenta":0,"Tipo":"2","Moneda":"2","UsuarioCliente":"ae@voice.com"}]
+[
+  {
+    "Saldo": 3000000,
+    "Numero": 123456789,
+    "Descripcion": "Cuenta de ahorros",
+    "CedulaCliente": 123456789,
+    "NumeroCuenta": 234566,
+    "Tipo": "1",
+    "Moneda": "1",
+    "UsuarioCliente": "cob@guitar.com"
+  },
+  {
+    "Saldo": 5000000,
+    "Numero": 987654321,
+    "Descripcion": "Cuenta corriente",
+    "CedulaCliente": 987654321,
+    "NumeroCuenta": 876567,
+    "Tipo": "2",
+    "Moneda": "2",
+    "UsuarioCliente": "ae@voice.com"
+  }
+]

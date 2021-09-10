@@ -52,5 +52,12 @@ namespace TecBank_API.Controllers
         {
             cm.eliminarCuenta(id);
         }
+
+        // GET api/<CuentaController>/5
+        [HttpGet("[action]/{id}")]
+        public List<Cuenta> Get2(int CedulaCliente)
+        {
+            return cm.consultarCuentaPorCliente(CedulaCliente);
+        }
     }
 }

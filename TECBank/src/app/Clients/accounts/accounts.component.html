@@ -54,18 +54,11 @@
                                                 <form #form autocomplete="off">
                                                     <div class="form-row">
                                                         <div class="col form-group">
-                                                            <label>Seleccione una Cuenta: </label>
-                                                        </div>
+                                                            <label>Cuenta de Origen: </label>
+                                                        </div> 
                                                         <div class="col form-group">
-                                                            <div ngbDropdown class="d-inline-block">
-                                                                <button class="btn btn-outline-primary" id="dropdownBasic1"
-                                                                    ngbDropdownToggle>{{selectedAccount}}</button>
-                                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                                                    <button *ngFor="let account of accounts" ngbDropdownItem
-                                                                        (click)="selectAccount(account.numero)">{{account}}</button>
-                                                               
-                                                                </div>
-                                                            </div>
+                                                            <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newTransfer.account"
+                                                                required>
                                                         </div>
                                                     </div>
                                                     <div class="form-row">

@@ -20,6 +20,7 @@ export class WithdrawalsComponent implements OnInit {
     cedulaCliente:0,
     saldo:0,
     usuarioCliente:"",
+    numeroCuenta:0,
   }
   newline: BalanceLine={movimiento:0};
   selectedValue: number|undefined=0

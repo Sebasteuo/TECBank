@@ -12,6 +12,7 @@ import { CardsComponent } from './Administration/cards/cards.component';
 import { AccountsComponent } from './Clients/accounts/accounts.component';
 import { ClientCardComponent } from './Clients/client-card/client-card.component';
 import { ClientLoanComponent } from './Clients/client-loan/client-loan.component';
+import { ReporteComponent } from './Administration/reporte/reporte.component';
 
 
 //Primer ruta por defecto
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'Tarjetas_Cliente', component: ClientCardComponent},
   { path: 'Cuentas_Cliente', component: AccountsComponent},
   { path: 'Prestamos_Cliente', component: ClientLoanComponent},
+  { path: 'Reporte', component: ReporteComponent},
 ];
 
 @NgModule({

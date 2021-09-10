@@ -120,17 +120,17 @@
                                             <tbody>
                                                 <tr *ngFor="let account of this.accounts">
                             
-                                                    <td *ngIf='editingID != account.numero'>{{account.numero}}</td>
-                                                    <td *ngIf='editingID == account.numero'>{{account.numero}}</td>
-                                                    <td *ngIf='editingID != account.numero'>{{account.saldo}}</td>
-                                                    <td *ngIf='editingID == account.numero'>{{account.saldo}}</td>
-                                                    <td *ngIf='editingID != account.numero'>{{account.descripcion}}</td>
-                                                    <td *ngIf='editingID == account.numero'><input value="{{selectedAccount.descripcion}}"
+                                                    <td *ngIf='editingID != account.numeroCuenta'>{{account.numeroCuenta}}</td>
+                                                    <td *ngIf='editingID == account.numeroCuenta'>{{account.numeroCuenta}}</td>
+                                                    <td *ngIf='editingID != account.numeroCuenta'>{{account.saldo}}</td>
+                                                    <td *ngIf='editingID == account.numeroCuenta'>{{account.saldo}}</td>
+                                                    <td *ngIf='editingID != account.numeroCuenta'>{{account.descripcion}}</td>
+                                                    <td *ngIf='editingID == account.numeroCuenta'><input value="{{selectedAccount.descripcion}}"
                                                         [(ngModel)]="selectedAccount.descripcion" class="form-control"></td>
                                                     
-                                                    <td *ngIf='editingID != account.cedulaCliente'>{{account.cedulaCliente}}</td>
-                                                    <td *ngIf='editingID == account.cedulaCliente'>{{account.cedulaCliente}}</td>
-                                                    <td *ngIf='editingID != account.numero'>
+                                                    <td *ngIf='editingID != account.numeroCuenta'>{{account.cedulaCliente}}</td>
+                                                    <td *ngIf='editingID == account.numeroCuenta'>{{account.cedulaCliente}}</td>
+                                                    <td *ngIf='editingID != account.numeroCuenta'>
                                                         <div *ngIf='account.tipo==1'>
                                                             Corriente
 
@@ -140,7 +140,7 @@
 
                                                         </div>
                                                     </td>
-                                                    <td *ngIf='editingID == account.numero'>
+                                                    <td *ngIf='editingID == account.numeroCuenta'>
                                                         <div ngbDropdown class="d-inline-block">
                                                             <button class="btn btn-outline-primary" id="dropdownBasic1"
                                                                 ngbDropdownToggle>{{editTipo}}</button>
@@ -152,7 +152,7 @@
                                                             </div>
                                                         </div>
                                                         </td>
-                                                    <td *ngIf='editingID != account.cedulaCliente'>
+                                                    <td *ngIf='editingID != account.numeroCuenta'>
                                                         <div *ngIf='account.moneda==1'>
                                                             Colones
 
@@ -166,20 +166,20 @@
 
                                                         </div>
                                                     </td>
-                                                    <td *ngIf='editingID == account.cedulaCliente'>{{account.moneda}}</td>
+                                                    <td *ngIf='editingID == account.numeroCuenta'>{{account.moneda}}</td>
 
                                                     <th scope="row">
-                                                        <button *ngIf='editingID != account.numero' (click)="edit(account)" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID != account.numeroCuenta' (click)="edit(account)" class="btn-icon" placement="top"
                                                             ngbTooltip="Editar">
                                                             <i class="fa fa-edit" aria-hidden="true"></i>
                                                         </button>
-                                                        <button *ngIf='editingID == account.numero' (click)="submit()" class="btn-icon" placement="top"
+                                                        <button *ngIf='editingID == account.numeroCuenta' (click)="submit()" class="btn-icon" placement="top"
                                                             ngbTooltip="Aceptar">
                                                             <i class="fa fa-check" aria-hidden="true"></i>
                                                         </button>
                                                     </th>
                                                     <th scope="row">
-                                                        <button (click)="delete(account.numero)" class="btn-icon" placement="top"
+                                                        <button (click)="delete(account.numeroCuenta)" class="btn-icon" placement="top"
                                                             ngbTooltip="Eliminar">
                                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                                         </button>

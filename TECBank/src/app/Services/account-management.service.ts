@@ -30,7 +30,7 @@ export class AccountManagementService {
   //Envía al API el ID de la cuenta a eliminar
   async deleteAccount(id: number | undefined) {
 
-    await this.http.delete(environment.api+'/Cuenta/'+id).toPromise().then(res=>{this.getAccount().then(result=>{this.accounts=result})})
+    await this.http.delete(environment.api+'/cuenta/'+id).toPromise().then(res=>{this.getAccount().then(result=>{this.accounts=result})})
     return this.accounts
   }
 
