@@ -33,8 +33,9 @@ namespace TecBank_API.Controllers
         [EnableCors("localhost")]
         // POST api/<EmpleadoController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Empleado empleado)
         {
+            em.agregarEmpleado(empleado);
         }
         [EnableCors("localhost")]
         // PUT api/<EmpleadoController>/5

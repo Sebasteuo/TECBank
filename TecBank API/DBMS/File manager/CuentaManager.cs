@@ -49,6 +49,12 @@ namespace TecBank_API.DBMS.File_manager
             this.ListaDeCuenta.Add(item);
             guardarCuenta();
         }
+
+        public void agregarCuenta(Cuenta cuenta)
+        {
+            this.ListaDeCuenta.Add(cuenta);
+            guardarCuenta();
+        }
         public void eliminarCuenta(int NumeroCuenta)
         {
             int index = 0;

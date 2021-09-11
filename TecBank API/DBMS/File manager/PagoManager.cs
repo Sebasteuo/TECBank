@@ -46,6 +46,13 @@ namespace TecBank_API.DBMS.File_manager
             this.ListaDePago.Add(item);
             guardarPago();
         }
+
+        public void agregarPago(Pago pago)
+        {
+            this.ListaDePago.Add(pago);
+            guardarPago();
+        }
+
         public void eliminarPago(int IdPago)
         {
             int index = 0;

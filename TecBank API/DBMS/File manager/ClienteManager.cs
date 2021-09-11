@@ -60,6 +60,12 @@ namespace TecBank_API.DBMS.File_manager
             this.ListaDeClientes.Add(cliente);
             guardarCliente();
         }
+
+        public void agregarCliente(Cliente cliente)
+        {
+            this.ListaDeClientes.Add(cliente);
+            guardarCliente();
+        }
         public void eliminarCliente(int cedula)
         {
             int index = 0;

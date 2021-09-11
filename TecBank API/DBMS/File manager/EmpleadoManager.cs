@@ -48,6 +48,13 @@ namespace TecBank_API.DBMS.File_manager
             this.ListaDeEmpleado.Add(item);
             guardarEmpleado();
         }
+
+        public void agregarEmpleado(Empleado empleado)
+        {
+            this.ListaDeEmpleado.Add(empleado);
+            guardarEmpleado();
+        }
+
         public void eliminarEmpleado(int IdEmpleado)
         {
             int index = 0;

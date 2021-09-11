@@ -32,8 +32,9 @@ namespace TecBank_API.Controllers
         [EnableCors("localhost")]
         // POST api/<PagoController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Pago pago)
         {
+            pm.agregarPago(pago);
         }
         [EnableCors("localhost")]
         // PUT api/<PagoController>/5

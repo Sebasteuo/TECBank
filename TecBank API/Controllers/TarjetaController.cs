@@ -34,8 +34,9 @@ namespace TecBank_API.Controllers
         [EnableCors("localhost")]
         // POST api/<TarjetaController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Tarjeta tarjeta)
         {
+            tm.agregarTarjeta(tarjeta);
         }
         [EnableCors("localhost")]
         // PUT api/<TarjetaController>/5

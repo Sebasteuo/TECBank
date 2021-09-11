@@ -33,8 +33,9 @@ namespace TecBank_API.Controllers
         [EnableCors("localhost")]
         // POST api/<ClienteController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Cliente cliente)
         {
+            cm.agregarCliente(cliente);
         }
         [EnableCors("localhost")]
         // PUT api/<ClienteController>/5
