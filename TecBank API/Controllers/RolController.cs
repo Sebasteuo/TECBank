@@ -34,8 +34,9 @@ namespace TecBank_API.Controllers
         // POST api/<RolController>
         [EnableCors("localhost")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Rol rol)
         {
+            rm.agregarRol(rol);
         }
 
         // PUT api/<RolController>/5

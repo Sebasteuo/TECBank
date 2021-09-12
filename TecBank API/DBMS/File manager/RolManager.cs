@@ -44,6 +44,13 @@ namespace TecBank_API
             this.ListaDeRoles.Add(rol);
             guardarRol();
         }
+
+        public void agregarRol(Rol rol)
+        {
+            this.ListaDeRoles.Add(rol);
+            guardarRol();
+        }
+
         public void eliminarRol(int IdRol)
         {
             int index = 0;

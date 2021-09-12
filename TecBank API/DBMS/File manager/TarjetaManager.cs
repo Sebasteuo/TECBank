@@ -51,6 +51,13 @@ namespace TecBank_API.DBMS.File_manager
             this.ListaDeTarjeta.Add(item);
             guardarTarjeta();
         }
+
+        public void agregarTarjeta(Tarjeta tarjeta)
+        {
+            this.ListaDeTarjeta.Add(tarjeta);
+            guardarTarjeta();
+        }
+
         public void eliminarTarjeta(int NumeroTarjeta)
         {
             int index = 0;
