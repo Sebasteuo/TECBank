@@ -41,11 +41,11 @@ namespace TecBank_API.Controllers
 
         // PUT api/<RolController>/5
         [EnableCors("localhost")]
-        [HttpPut("{id}")]
-        public void Put(string RolParaCambiar)
+        [HttpPut]
+        public void Put(Rol RolParaCambiar)
         {
-            Rol rol = JsonConvert.DeserializeObject<Rol>(RolParaCambiar);
-            rm.actualizarRol(rol);
+           //Rol rol = JsonConvert.DeserializeObject<Rol>(RolParaCambiar);
+            rm.actualizarRol(RolParaCambiar);
         }
         // DELETE api/<RolController>/5
         [EnableCors("localhost")]

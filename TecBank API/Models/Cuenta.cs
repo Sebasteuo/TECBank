@@ -12,8 +12,8 @@ namespace TecBank_API.Models
         public string Descripcion { get; set; }
         public int CedulaCliente { get; set; }
         public int NumeroCuenta { get; set; }
-        public string Tipo{ get; set; }
-        public string Moneda { get; set; }
+        public int Tipo{ get; set; }
+        public int Moneda { get; set; }
         public string UsuarioCliente { get; set; }
         
         //llave

@@ -42,20 +42,15 @@ export class ClientManagementService {
   }
 
   //Envía los datos modificados al API (esta función se comporta igual a la que account-management.service)
-  editClient(selecter: Client) {
-    this.clients.forEach((role,index)=>{
-      if(role.cedula==selecter.cedula){
-        this.clients[index] = selecter
-
-      }
-    }
-    )
+  async editClient(client: Client) {
+    await this.http.put(environment.api+"/cliente", client).toPromise().then(res=>{this.getClients().then(result=>{this.clients=result})})
     return this.clients
   }
 
   //Envía los datos de un nuevo cliente al API
-  addClient(Client : Client){
-    this.clients.push(Client);
+  async addClient(Client : Client){
+    const body = {}
+    await this.http.post(environment.api+"/cliente", Client).toPromise().then(res=>{this.getClients().then(result=>{this.clients=result})})
     return this.clients;
   }
 }

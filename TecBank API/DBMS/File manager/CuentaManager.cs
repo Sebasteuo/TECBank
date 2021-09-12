@@ -34,7 +34,7 @@ namespace TecBank_API.DBMS.File_manager
             }
         }
 
-        public void agregarCuenta(int Saldo, string Tipo, int Numero, string Descripcion, string Moneda, int CedulaCliente, string UsuarioCliente, int NumeroCuenta)
+        public void agregarCuenta(int Saldo, int Tipo, int Numero, string Descripcion, int Moneda, int CedulaCliente, string UsuarioCliente, int NumeroCuenta)
         {
             //crea clase respectiva
             Cuenta    item = new Cuenta();
@@ -103,10 +103,10 @@ namespace TecBank_API.DBMS.File_manager
             switch (atributoAcambiar)
             {
                 case "Tipo":
-                    item.Tipo = ValorParaCambiar;
+                    item.Tipo = Int32.Parse(ValorParaCambiar);
                     break;
                 case "Moneda":
-                    item.Moneda = ValorParaCambiar;
+                    item.Moneda = Int32.Parse(ValorParaCambiar);
                     break;
                 case "UsuarioCliente":
                     item.UsuarioCliente = ValorParaCambiar;

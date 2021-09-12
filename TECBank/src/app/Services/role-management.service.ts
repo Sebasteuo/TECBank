@@ -27,21 +27,14 @@ export class RoleManagementService {
   }
 
   //Envía al API el idRol del rol Editado
-  editRole(selecter: Role) {
-    this.roles.forEach((role,index)=>{
-      if(role.idRol==selecter.idRol){
-        this.roles[index] = selecter
-
-      }
-    }
-    )
+  async editRole(rol: Role) {
+    await this.http.put(environment.api+"/rol", rol).toPromise().then(res=>{this.getRoles().then(result=>{this.roles=result})})
     return this.roles
   }
 
   //Envía al API el idRol del rol agregado
-  addRole(role : Role){
-    role.idRol = this.roles.length + 1;
-    this.roles.push(role);
+ async addRole(role : Role){
+    await this.http.post(environment.api+"/rol", role).toPromise().then(res=>{this.getRoles().then(result=>{this.roles=result})})
     return this.roles;
   }
 }

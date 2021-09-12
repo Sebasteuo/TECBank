@@ -40,11 +40,11 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         // PUT api/<TarjetaController>/5
-        [HttpPut("{id}")]
-        public void Put(string TarjetaParaCambiar)
+        [HttpPut]
+        public void Put(Tarjeta TarjetaParaCambiar)
         {
-            Tarjeta tj = JsonConvert.DeserializeObject<Tarjeta>(TarjetaParaCambiar);
-            tm.actualizarTarjeta(tj);
+            //Tarjeta tj = JsonConvert.DeserializeObject<Tarjeta>(TarjetaParaCambiar);
+            tm.actualizarTarjeta(TarjetaParaCambiar);
         }
         [EnableCors("localhost")]
         // DELETE api/<TarjetaController>/5

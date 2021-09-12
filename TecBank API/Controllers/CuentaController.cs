@@ -39,11 +39,11 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         // PUT api/<CuentaController>/5
-        [HttpPut("{id}")]
-        public void Put(string CuentaParaCambiar)
+        [HttpPut]
+        public void Put(Cuenta CuentaParaCambiar)
         {
-            Cuenta cuenta = JsonConvert.DeserializeObject<Cuenta>(CuentaParaCambiar);
-            cm.actualizarCuenta(cuenta);
+            //Cuenta cuenta = JsonConvert.DeserializeObject<Cuenta>(CuentaParaCambiar);
+            cm.actualizarCuenta(CuentaParaCambiar);
         }
         [EnableCors("localhost")]
 

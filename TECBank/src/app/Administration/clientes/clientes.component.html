@@ -3,7 +3,7 @@
     <aside class="col-lg" style="margin: 5% 5% 5% 5%;">
         <div class="card">
             <article class="card-body">
-                <h4 class="card-title mb-4 mt-1">Administración de Roles</h4>
+                <h4 class="card-title mb-4 mt-1">Administración de Clientes</h4>
                 <hr>
                 <div class="row">
                     <!-- table -->
@@ -59,10 +59,28 @@
                                         </div>
                                         <div class="form-row">
                                             <div class="col form-group">
-                                                <label>Dirección: </label>
+                                                <label>Provincia: </label>
                                             </div>
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Dirección:" [(ngModel)]="newClient.direccion"
+                                                <input name="quantity" class="form-control" placeholder="Provincia" [(ngModel)]="newClient.provincia"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col form-group">
+                                                <label>Cantón: </label>
+                                            </div>
+                                            <div class="col form-group">
+                                                <input name="quantity" class="form-control" placeholder="Canton" [(ngModel)]="newClient.canton"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col form-group">
+                                                <label>Distrito: </label>
+                                            </div>
+                                            <div class="col form-group">
+                                                <input name="quantity" class="form-control" placeholder="Distrito" [(ngModel)]="newClient.distrito"
                                                     required>
                                             </div>
                                         </div>
@@ -111,7 +129,9 @@
                                                     <th>Primer Apellido</th>
                                                     <th>Segundo Apellido</th>
                                                     <th>Teléfono</th>
-                                                    <th>Dirección</th>
+                                                    <th>Provincia</th>
+                                                    <th>Cantón</th>
+                                                    <th>Distrito</th>
                                                     <th>Ingresos</th>
                                                     <th>Usuario</th>
                                                     <th colspan="2"></th>
@@ -137,9 +157,17 @@
                                                     <td *ngIf='editingID == client.cedula'><input value="{{selectedClient.telefono}}"
                                                         [(ngModel)]="selectedClient.telefono" class="form-control"></td>
 
-                                                    <td *ngIf='editingID != client.cedula'>{{client.direccion}}</td>
-                                                    <td *ngIf='editingID == client.cedula'><input value="{{selectedClient.direccion}}"
-                                                        [(ngModel)]="selectedClient.direccion" class="form-control"></td>
+                                                    <td *ngIf='editingID != client.cedula'>{{client.provincia}}</td>
+                                                    <td *ngIf='editingID == client.cedula'><input value="{{selectedClient.provincia}}"
+                                                        [(ngModel)]="selectedClient.provincia" class="form-control"></td>
+
+                                                     <td *ngIf='editingID != client.cedula'>{{client.canton}}</td>
+                                                        <td *ngIf='editingID == client.cedula'><input value="{{selectedClient.canton}}"
+                                                            [(ngModel)]="selectedClient.canton" class="form-control"></td>
+
+                                                            <td *ngIf='editingID != client.cedula'>{{client.distrito}}</td>
+                                                            <td *ngIf='editingID == client.cedula'><input value="{{selectedClient.distrito}}"
+                                                                [(ngModel)]="selectedClient.distrito" class="form-control"></td>
 
                                                      <td *ngIf='editingID != client.cedula'>{{client.ingreso_mensual}}</td>
                                                     <td *ngIf='editingID == client.cedula'><input value="{{selectedClient.ingreso_mensual}}"

@@ -35,7 +35,7 @@ namespace TecBank_API.DBMS.File_manager
             }
         }
 
-        public void agregarTarjeta(int NumeroTarjeta, string FechaDeExpiracion, string Tipo, int Saldo, int NumeroCuenta, int CodigoSeguridad)
+        public void agregarTarjeta(int NumeroTarjeta, string FechaDeExpiracion, int Tipo, int Saldo, int NumeroCuenta, int CodigoSeguridad)
         {
             //crea clase respectiva
             Tarjeta

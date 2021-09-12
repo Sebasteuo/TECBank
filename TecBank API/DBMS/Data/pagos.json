@@ -4,13 +4,15 @@
         "monto":"12000",
         "fechaPago":"30-7-21",
         "numeroCuentaDestino":"123456789",
-        "numeroDeCuenta":"987654321"
+      "numeroDeCuenta": "987654321",
+        "descripcion":  "hola"
     },
-    {
-        "idPago":"88",
-        "monto":"65000",
-        "fechaPago":"8-7-21",
-        "numeroCuentaDestino":"987654321",
-        "numeroDeCuenta":"123456789"
-    }
+  {
+    "idPago": "88",
+    "monto": "65000",
+    "fechaPago": "8-7-21",
+    "numeroCuentaDestino": "987654321",
+    "numeroDeCuenta": "123456789",
+    "descripcion": "chao"
+  }
 ]

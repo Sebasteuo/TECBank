@@ -38,11 +38,11 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         // PUT api/<PagoController>/5
-        [HttpPut("{id}")]
-        public void Put(string PagoParaCambiar)
+        [HttpPut]
+        public void Put(Pago PagoParaCambiar)
         {
-            Pago pago = JsonConvert.DeserializeObject<Pago>(PagoParaCambiar);
-            pm.actualizarPago(pago);
+            //Pago pago = JsonConvert.DeserializeObject<Pago>(PagoParaCambiar);
+            pm.actualizarPago(PagoParaCambiar);
         }
         [EnableCors("localhost")]
         // DELETE api/<PagoController>/5

@@ -87,14 +87,14 @@ edit(card : Card){
 submit(){
   this.selectedCard.tipo = this.editTipoID
   this.editingID = 0;
-  this.cards = this.cardservice.editCard(this.selectedCard)
+  this.cardservice.editCard(this.selectedCard).then(res=>this.cards=res)
 
 }
 
 //Envía los datos de una nueva cuenta al servicio y restablece las cajas de texto
 add(){
   this.newCard.tipo=this.selectedTypeID;
-  this.cards = this.cardservice.addCard(this.newCard);
+  this.cardservice.addCard(this.newCard).then(res=>this.cards=res);
   this.newCard = {
     numeroTarjeta: 0,
       tipo: 0,

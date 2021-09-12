@@ -39,11 +39,11 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         // PUT api/<ClienteController>/5
-        [HttpPut("{id}")]
-        public void Put(string ClienteParaCambiar)
+        [HttpPut]
+        public void Put(Cliente ClienteParaCambiar)
         {
-            Cliente cl = JsonConvert.DeserializeObject<Cliente>(ClienteParaCambiar);
-            cm.actualizarCliente(cl);
+            //Cliente cl = JsonConvert.DeserializeObject<Cliente>(ClienteParaCambiar);
+            cm.actualizarCliente(ClienteParaCambiar);
         }
         [EnableCors("localhost")]
         // DELETE api/<ClienteController>/5

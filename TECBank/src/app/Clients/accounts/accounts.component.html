@@ -7,7 +7,7 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-12">
-                    
+
 
                         <div class="d-flex">
                             <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
@@ -31,19 +31,19 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                        
+
                                                                 <td></td>
-        
+
                                                             </tr>
                                                         </tbody>
-            
+
                                                     </table>
                                                 </div>
                                             </div>
 
 
                                         </div>
-                                        
+
                                     </ng-template>
                                 </li>
                                 <li ngbNavItem="middle">
@@ -55,51 +55,57 @@
                                                     <div class="form-row">
                                                         <div class="col form-group">
                                                             <label>Cuenta de Origen: </label>
-                                                        </div> 
+                                                        </div>
                                                         <div class="col form-group">
-                                                            <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newTransfer.account"
+                                                            <input name="quantity" class="form-control"
+                                                                placeholder="Cuenta" [(ngModel)]="newTransfer.numeroDeCuenta"
                                                                 required>
                                                         </div>
                                                     </div>
-                                                    <div class="form-row">
-                                                        <div class="col form-group">
-                                                            <label>Cuenta de Destino: </label>
-                                                        </div> 
-                                                        <div class="col form-group">
-                                                            <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newTransfer.receiver"
-                                                                required>
+                                                    <div class=" form-row">
+                                                            <div class="col form-group">
+                                                                <label>Cuenta de Destino: </label>
+                                                            </div>
+                                                            <div class="col form-group">
+                                                                <input name="quantity" class="form-control"
+                                                                    placeholder="Cuenta"
+                                                                    [(ngModel)]="newTransfer.numeroCuentaDestino"
+                                                                    required>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <div class="col form-group">
-                                                            <label>Descripción: </label>
+                                                        <div class="form-row">
+                                                            <div class="col form-group">
+                                                                <label>Descripción: </label>
+                                                            </div>
+                                                            <div class="col form-group">
+                                                                <input name="quantity" class="form-control"
+                                                                    placeholder="Descripción"
+                                                                    [(ngModel)]="newTransfer.descripcion" required>
+                                                            </div>
                                                         </div>
-                                                        <div class="col form-group">
-                                                            <input name="quantity" class="form-control" placeholder="Descripción" [(ngModel)]="newTransfer.description"
-                                                                required>
+                                                        <div class="form-row">
+                                                            <div class="col form-group">
+                                                                <label>Monto: </label>
+                                                            </div>
+                                                            <div class="col form-group">
+                                                                <input name="quantity" class="form-control"
+                                                                    placeholder="Cliente"
+                                                                    [(ngModel)]="newTransfer.monto" required>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <div class="col form-group">
-                                                            <label>Monto: </label>
+
+
+                                                        <div class="col form-groupform-group">
+                                                            <button class="btn btn-primary btn-block"
+                                                                (click)="submit()">Transferir</button>
                                                         </div>
-                                                        <div class="col form-group">
-                                                            <input name="quantity" class="form-control" placeholder="Cliente" [(ngModel)]="newTransfer.amount"
-                                                                required>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    
-                                                    <div class="col form-groupform-group">
-                                                        <button class="btn btn-primary btn-block" (click)="submit()">Transferir</button>
-                                                    </div>
-            
+
                                                 </form>
                                             </div>
                                         </article>
                                     </ng-template>
                                 </li>
-                                
+
                             </ul>
 
                             <div [ngbNavOutlet]="nav" class="ml-4"></div>

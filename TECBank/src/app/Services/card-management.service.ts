@@ -28,20 +28,14 @@ export class CardManagementService {
   }
 
   //Envía al API los datos de la cuenta modificada
-  editCard(selecter: Card) {
-    this.cards.forEach((card, index) => { //Recorre todos los elementos del array y mantiene los índices
-      if (card.numeroTarjeta == selecter.numeroTarjeta) { //Cada vez que se ejecuta evalua el ID del elemento que se está recorriendo
-        this.cards[index] = selecter //Si se cumple la condición del IF asigna los datos nuevos en la posición por la que iba recorriendo
-
-      }
-    }
-    )
+  async editCard(Card: Card) {
+    await this.http.put(environment.api+"/tarjeta", Card).toPromise().then(res=>{this.getCards().then(result=>{this.cards=result})})
     return this.cards
   }
 
   //Envía al API los datos de una cuenta nueva
-  addCard(Card: Card) {
-    this.cards.push(Card);
+  async addCard(Card: Card) {
+    await this.http.post(environment.api+"/tarjeta", Card).toPromise().then(res=>{this.getCards().then(result=>{this.cards=result})})
     return this.cards;
   }
 

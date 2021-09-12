@@ -20,7 +20,9 @@ export class ClientesComponent implements OnInit {
     apellido_2:"",
     cedula:0,
     telefono:0,
-    direccion:"",
+    provincia:"",
+    canton:"",
+    distrito:"",
     ingreso_mensual:"",
     usuario:"",
     tipo:"",
@@ -28,15 +30,16 @@ export class ClientesComponent implements OnInit {
   }
   selectedClient: Client={
     nombre:"",
-    apellido_1:"",
-    apellido_2:"",
-    cedula:0,
-    telefono:0,
-    direccion:"",
-    ingreso_mensual:"",
-    usuario:"",
-    tipo:"",
-    
+      apellido_1:"",
+      apellido_2:"",
+      cedula:0,
+      telefono:0,
+      provincia:"",
+      canton:"",
+      distrito:"",
+      ingreso_mensual:"",
+      usuario:"",
+      tipo:"",
   }
   clients: Client[]=[]
   editingID: number | undefined = 0;
@@ -59,19 +62,21 @@ export class ClientesComponent implements OnInit {
   //Envía los datos del cliente modificados, pertenece al botón de "aceptar"
   submit(){
     this.editingID = 0;
-    this.clients = this.clientServices.editClient(this.selectedClient)
+    this.clientServices.editClient(this.selectedClient).then(res=>{this.clients=res});
   }
 
   //Envía los datos de un nuevo cliente al servicio
   add(){
-    this.clients = this.clientServices.addClient(this.newClient);
+    this.clientServices.addClient(this.newClient).then(res=>{this.clients=res});
     this.newClient = {
       nombre:"",
       apellido_1:"",
       apellido_2:"",
       cedula:0,
       telefono:0,
-      direccion:"",
+      provincia:"",
+      canton:"",
+      distrito:"",
       ingreso_mensual:"",
       usuario:"",
       tipo:"",

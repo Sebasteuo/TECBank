@@ -44,12 +44,16 @@ export class RolesComponent implements OnInit {
   //Envía los datos del Rol editado al servicio
   submit(){
     this.editingID = 0;
-    this.roles = this.rolesServices.editRole(this.selectedRole)
+    this.rolesServices.editRole(this.selectedRole).then(res=>this.roles=res)
   }
 
+  getRandomInt(min:number, max:number) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
   //Envía los datos de un nuevo rol al servicio
   add(){
-    this.roles = this.rolesServices.addRole(this.newRole);
+    this.newRole.idRol=this.getRandomInt(1,100)
+    this.rolesServices.addRole(this.newRole).then(res=>this.roles=res);
     this.newRole = {
       idRol:0,
       nombre : '',

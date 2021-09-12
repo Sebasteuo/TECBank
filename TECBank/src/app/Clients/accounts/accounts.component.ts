@@ -17,30 +17,32 @@ export class AccountsComponent implements OnInit {
   accounts:Account[]=[]
   transfers:Transfer[]=[]
   newTransfer:Transfer={
-    id:0,
-    account:0,
-    receiver:0,
-    amount:0,
-    description:"",
-    date:"",
-    clientId:0,
+    idPago:0,
+    monto:0,
+    numeroCuentaDestino:0,
+    descripcion:"",
+    fechaPago:"",
+    numeroDeCuenta:0,
   }
   active = 1
   ngOnInit(): void {
-    this.transfers=this.transferService.getTransfers(localStorage.getItem("UserId") as string )
+    this.transferService.getTransfers(localStorage.getItem("UserId") as unknown as number ).then(res=>this.transfers=res)
     this.accountService.getAccount().then(res=>{this.accounts=res})
   }
 
+
+  getRandomInt(min:number, max:number) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }  
   submit(){
     this.transferService.makeTransfers(this.newTransfer)
     this.newTransfer={
-      id:0,
-      account:0,
-      receiver:0,
-      amount:0,
-      description:"",
-      date:"",
-      clientId:0,
+      idPago:0,
+      monto:0,
+      numeroCuentaDestino:0,
+      descripcion:"",
+      fechaPago:"",
+      numeroDeCuenta:0,
     }
 
   }

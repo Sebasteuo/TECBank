@@ -35,20 +35,26 @@ export class AccountManagementService {
   }
 
   //Envía al API los datos de la cuenta modificada
-  editAccount(selecter: Account) {
-    this.accounts.forEach((account,index)=>{ //Recorre todos los elementos del array y mantiene los índices
-      if(account.numero==selecter.numero){ //Cada vez que se ejecuta evalua el ID del elemento que se está recorriendo
-        this.accounts[index] = selecter //Si se cumple la condición del IF asigna los datos nuevos en la posición por la que iba recorriendo
-
-      }
-    }
-    )
+  async editAccount(Cuenta: Account) {
+    
+    await this.http.put(environment.api+"/cuenta", Cuenta).toPromise().then(res=>{this.getAccount().then(result=>{this.accounts=result})})
     return this.accounts
   }
 
   //Envía al API los datos de una cuenta nueva
-  addAccount(Account : Account){
-    this.accounts.push(Account);
+  async addAccount(Cuenta : Account){
+
+    const body = {
+    numero:Cuenta.numero,
+      descripcion:Cuenta.descripcion,
+      tipo: Cuenta.tipo as unknown as string,
+      moneda: Cuenta.moneda as unknown as string,
+      cedulaCliente: Cuenta.cedulaCliente,
+      saldo: Cuenta.saldo,
+      usuarioCliente: Cuenta.usuarioCliente,
+      numeroCuenta: Cuenta.numeroCuenta, }
+
+    await this.http.post(environment.api+"/cuenta", body).toPromise().then(res=>{this.getAccount().then(result=>{this.accounts=result})})
     return this.accounts;
   }
 

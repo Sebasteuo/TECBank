@@ -12,5 +12,6 @@ namespace TecBank_API.Models
         public string FechaPago { get; set; }
         public string NumeroCuentaDestino { get; set; }
         public string NumeroCuenta { get; set; }
+        public string Descripcion { get; set; }
     }
 }

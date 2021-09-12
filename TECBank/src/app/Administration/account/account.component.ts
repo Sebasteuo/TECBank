@@ -26,7 +26,7 @@ export class AccountComponent implements OnInit {
   //Lo que va entre las llaves es un JSON. Un objeto JSON siempre inicia con llaves, los valores se asignan con ':' y se debe separar con coma
   newAccount : Account = {
     numero:0,
-    descripcion : '',
+    descripcion : "",
     tipo: 0,
     moneda: 0,
     cedulaCliente:0,
@@ -37,7 +37,7 @@ export class AccountComponent implements OnInit {
   //Variable de tipo de creación propia (modelos) (En este caso la variable es de tipo Account)
   selectedAccount : Account = {
     numero:0,
-    descripcion : '',
+    descripcion : "",
     tipo: 0,
     moneda: 0,
     cedulaCliente:0,
@@ -85,22 +85,26 @@ export class AccountComponent implements OnInit {
     }
   }
 
+  getRandomInt(min:number, max:number) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
   //Envía los datos de la cuenta modificada al servicio
   submit(){
     this.selectedAccount.tipo = this.editTipoID
     this.editingID = 0;
-    this.accounts = this.accountservice.editAccount(this.selectedAccount)
+    this.accountservice.editAccount(this.selectedAccount).then(res=> this.accounts=res)
 
   }
 
   //Envía los datos de una nueva cuenta al servicio y restablece las cajas de texto
   add(){
+    this.newAccount.numeroCuenta=this.getRandomInt(1,1000)
     this.newAccount.moneda=this.selectedValueID;
     this.newAccount.tipo=this.selectedTypeID;
-    this.accounts = this.accountservice.addAccount(this.newAccount);
+    this.accountservice.addAccount(this.newAccount).then(res=>this.accounts=res);
     this.newAccount = {
       numero:0,
-      descripcion : '',
+      descripcion : "",
       tipo: 0,
       moneda: 0,
       cedulaCliente:0,

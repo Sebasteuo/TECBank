@@ -1,10 +1,10 @@
 export class Transfer {
 
-    clientId: number|undefined
-    account:number|undefined
-    receiver:number|undefined
-    description:string|undefined
-    amount:number|undefined
-    date:string|undefined
-    id:number|undefined
+ 
+    numeroDeCuenta:number|undefined
+    numeroCuentaDestino:number|undefined
+    descripcion:string|undefined
+    monto:number|undefined
+    fechaPago:string|undefined
+    idPago:number|undefined
 }

@@ -39,11 +39,11 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         // PUT api/<EmpleadoController>/5
-        [HttpPut("{id}")]
-        public void Put(string EmpleadoParaCambiar)
+        [HttpPut]
+        public void Put(Empleado EmpleadoParaCambiar)
         {
-            Empleado emp = JsonConvert.DeserializeObject<Empleado>(EmpleadoParaCambiar);
-            em.actualizarEmpleado(emp);
+            //Empleado emp = JsonConvert.DeserializeObject<Empleado>(EmpleadoParaCambiar);
+            em.actualizarEmpleado(EmpleadoParaCambiar);
         }
         [EnableCors("localhost")]
         // DELETE api/<EmpleadoController>/5
