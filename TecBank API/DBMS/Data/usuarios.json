@@ -1,0 +1,14 @@
+
+  [
+    {
+      "user": "Admin",
+      "password": "ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=",
+      "tipo": "Administrador"
+    },
+    {
+      "user": "Prueba",
+      "password": "ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=",
+      "tipo": "Cliente"
+    }
+  ]
+

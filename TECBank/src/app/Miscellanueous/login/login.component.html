@@ -7,22 +7,22 @@
                 <article class="card-body">
                     <h4 class="card-title text-center mb-4 mt-1">Iniciar sesión</h4>
                     <hr>
-                    <form #form autocomplete="off" (ngSubmit)="onSubmit(Email.value, Password.value)">
+                    <form #form autocomplete="off" >
                         <div class="form-group">
                             <label>Usuario</label>
-                            <input #Email ngModel name="Email" class="form-control" placeholder="Usuario" type="email"
+                            <input #Email  [(ngModel)]="newCredentials.user" name="Email" class="form-control" placeholder="Usuario" type="email"
                                 required>
                             
                         </div> <!-- form-group// -->
                         <div class="form-group">
                             <label>Contraseña</label>
-                            <input type="password" #Password ngModel name="Password" class="form-control"
+                            <input type="password" #Password [(ngModel)]="newCredentials.password" name="Password" class="form-control"
                                 placeholder="Password" required>
                             
                         </div> <!-- form-group// -->
 
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block" [disabled]="form.invalid"> Iniciar sesión </button>
+                            <button type="submit" class="btn btn-primary btn-block" [disabled]="form.invalid" (click)="submit()"> Iniciar sesión </button>
                         </div> <!-- form-group// -->
                         <p class="text-center"><a routerLink="/Registro" class="btn">¿No tiene una cuenta?</a></p>
                     </form>

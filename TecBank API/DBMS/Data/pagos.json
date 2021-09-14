@@ -1,18 +1,1 @@
-[
-    {
-        "idPago":"99",
-        "monto":"12000",
-        "fechaPago":"30-7-21",
-        "numeroCuentaDestino":"123456789",
-      "numeroDeCuenta": "987654321",
-        "descripcion":  "hola"
-    },
-  {
-    "idPago": "88",
-    "monto": "65000",
-    "fechaPago": "8-7-21",
-    "numeroCuentaDestino": "987654321",
-    "numeroDeCuenta": "123456789",
-    "descripcion": "chao"
-  }
-]
+[{"IdPago":99,"Monto":"12000","FechaPago":"30-7-21","NumeroCuentaDestino":"123456789","NumeroDeCuenta":"987654321","Descripcion":"hola"},{"IdPago":88,"Monto":"65000","FechaPago":"8-7-21","NumeroCuentaDestino":"987654321","NumeroDeCuenta":"123456789","Descripcion":"chao"},{"IdPago":478,"Monto":"8765","FechaPago":"","NumeroCuentaDestino":"765","NumeroDeCuenta":"765","Descripcion":"hgf"},{"IdPago":347,"Monto":"899","FechaPago":"","NumeroCuentaDestino":"876","NumeroDeCuenta":"8765","Descripcion":"pruebita"},{"IdPago":237,"Monto":"888","FechaPago":"09/13/2021","NumeroCuentaDestino":"999","NumeroDeCuenta":"888","Descripcion":"holi"}]

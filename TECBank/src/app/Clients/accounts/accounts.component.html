@@ -23,17 +23,21 @@
                                                                 <th>Número de Cuenta</th>
                                                                 <th>Fecha</th>
                                                                 <th>Documento</th>
-                                                                <th>Débito</th>
-                                                                <th>Crédito</th>
+                                                                <th>Monto</th>
+                                                                <th>Cuenta Destino</th>
                                                                 <th>Descripción</th>
-                                                                <th colspan="2"></th>
+                                                                
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
+                                                            <tr *ngFor="let transfer of transfers">
 
-                                                                <td></td>
-
+                                                                <td>{{ transfer.numeroDeCuenta}}</td>
+                                                                <td>{{ transfer.fechaPago}}</td>
+                                                                <td>{{ transfer.idPago}}</td>
+                                                                <td>{{ transfer.monto}}</td>
+                                                                <td>{{ transfer.numeroCuentaDestino}}</td>
+                                                                <td>{{ transfer.descripcion}}</td>
                                                             </tr>
                                                         </tbody>
 
@@ -58,47 +62,46 @@
                                                         </div>
                                                         <div class="col form-group">
                                                             <input name="quantity" class="form-control"
-                                                                placeholder="Cuenta" [(ngModel)]="newTransfer.numeroDeCuenta"
-                                                                required>
+                                                                placeholder="Cuenta"
+                                                                [(ngModel)]="newTransfer.numeroDeCuenta" required>
                                                         </div>
                                                     </div>
                                                     <div class=" form-row">
-                                                            <div class="col form-group">
-                                                                <label>Cuenta de Destino: </label>
-                                                            </div>
-                                                            <div class="col form-group">
-                                                                <input name="quantity" class="form-control"
-                                                                    placeholder="Cuenta"
-                                                                    [(ngModel)]="newTransfer.numeroCuentaDestino"
-                                                                    required>
-                                                            </div>
+                                                        <div class="col form-group">
+                                                            <label>Cuenta de Destino: </label>
                                                         </div>
-                                                        <div class="form-row">
-                                                            <div class="col form-group">
-                                                                <label>Descripción: </label>
-                                                            </div>
-                                                            <div class="col form-group">
-                                                                <input name="quantity" class="form-control"
-                                                                    placeholder="Descripción"
-                                                                    [(ngModel)]="newTransfer.descripcion" required>
-                                                            </div>
+                                                        <div class="col form-group">
+                                                            <input name="quantity" class="form-control"
+                                                                placeholder="Cuenta"
+                                                                [(ngModel)]="newTransfer.numeroCuentaDestino" required>
                                                         </div>
-                                                        <div class="form-row">
-                                                            <div class="col form-group">
-                                                                <label>Monto: </label>
-                                                            </div>
-                                                            <div class="col form-group">
-                                                                <input name="quantity" class="form-control"
-                                                                    placeholder="Cliente"
-                                                                    [(ngModel)]="newTransfer.monto" required>
-                                                            </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Descripción: </label>
                                                         </div>
+                                                        <div class="col form-group">
+                                                            <input name="quantity" class="form-control"
+                                                                placeholder="Descripción"
+                                                                [(ngModel)]="newTransfer.descripcion" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col form-group">
+                                                            <label>Monto: </label>
+                                                        </div>
+                                                        <div class="col form-group">
+                                                            <input name="quantity" class="form-control"
+                                                                placeholder="Cliente" [(ngModel)]="newTransfer.monto"
+                                                                required>
+                                                        </div>
+                                                    </div>
 
 
-                                                        <div class="col form-groupform-group">
-                                                            <button class="btn btn-primary btn-block"
-                                                                (click)="submit()">Transferir</button>
-                                                        </div>
+                                                    <div class="col form-groupform-group">
+                                                        <button class="btn btn-primary btn-block"
+                                                            (click)="submit()">Transferir</button>
+                                                    </div>
 
                                                 </form>
                                             </div>

@@ -150,3 +150,4 @@ C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.dll
 C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\ref\TecBank API.dll
 C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.pdb
 C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.genruntimeconfig.cache
+C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\usuarios.json

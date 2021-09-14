@@ -1,6 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { AsyncSubject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Credentials } from '../models/credentials.model';
 
 @Injectable({
@@ -8,10 +11,27 @@ import { Credentials } from '../models/credentials.model';
 })
 export class AuthenticationService {
   newUser: Credentials={user:"",password:"", tipo:""}
-  constructor(private router:Router,public toastr:ToastrService) { }
-  Users:Credentials[]=[{user:"Admin",password:"ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=", tipo: "Administrador"}, {user:"Prueba", password:"ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=", tipo: "Cliente"}]
-  login(user:string,password:string){
-    
+
+  constructor(private router:Router,public toastr:ToastrService, public http:HttpClient) { }
+  Users:Credentials[]=[]
+ async login(credentials:Credentials){
+
+  console.log("---")
+    await this.http.post(environment.api+"/usuario", credentials).toPromise()/*then(res=>{
+
+      console.log("***")
+      console.log(res)
+      localStorage.setItem("User", credentials.user as unknown as string)
+        console.log("AAAAAAAAAAAAAAAAA")
+          localStorage.setItem("UserType", res as string)
+          console.log("BBBBBBBBBBBBBBBBB")
+          //localStorage.setItem("UserId", this.getClientID())
+          this.router.navigate(["/Welcome"])
+     
+  })
+    */
+   
+    /*
       this.Users.forEach(obj=>{
         if(obj.user==user && obj.password==password){
           localStorage.setItem("User", user)
@@ -20,7 +40,7 @@ export class AuthenticationService {
           this.router.navigate(["/Welcome"])
         }
         
-      })    
+      })    */
      
   }
 

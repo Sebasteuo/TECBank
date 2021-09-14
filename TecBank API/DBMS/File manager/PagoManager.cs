@@ -34,14 +34,14 @@ namespace TecBank_API.DBMS.File_manager
             }
         }
 
-        public void agregarPago(int IdPago, string Monto, string FechaPago, string NumeroCuentaDestino, string NumeroCuenta)
+        public void agregarPago(int IdPago, string Monto, string FechaPago, string NumeroCuentaDestino, string NumeroDeCuenta)
         {
             //crea clase respectiva
             Pago item = new Pago();
             item.IdPago = IdPago;
             item.Monto = Monto;
             item.FechaPago = FechaPago;
-            item.NumeroCuenta = NumeroCuenta;
+            item.NumeroDeCuenta = NumeroDeCuenta;
             item.NumeroCuentaDestino = NumeroCuentaDestino;
             this.ListaDePago.Add(item);
             guardarPago();
@@ -110,7 +110,7 @@ namespace TecBank_API.DBMS.File_manager
                     item.NumeroCuentaDestino = ValorParaCambiar;
                     break;
                 case "NumeroCuenta":
-                    item.NumeroCuenta = ValorParaCambiar;
+                    item.NumeroDeCuenta = ValorParaCambiar;
                     break;
                 default:
                     break;

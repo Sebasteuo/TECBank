@@ -9,6 +9,20 @@ import { Client } from '../models/client.model';
 })
 export class ClientManagementService {
   clients: Client[] = []
+  currentClient: Client ={
+    nombre:"",
+    apellido_1:"",
+    apellido_2:"",
+    cedula:0,
+    telefono:0,
+    provincia:"",
+    canton:"",
+    distrito:"",
+    ingreso_mensual:"",
+    usuario:"",
+    tipo:"",
+    
+  }
   constructor(public http:HttpClient) { }
   /**
    * 
@@ -23,15 +37,19 @@ export class ClientManagementService {
     })
 
     return this.clients
-    /*this.clients=[{  Nombre:"Prueba",
-    Apellido1:"Alba",
-    Apellido2:"Vives",
-    ID:39275482,
-    Telefono:86651418,
-    Direccion:"Pitahaya, Agua Caliente",
-    Ingresos:"Muchos",
-    Usuario:"Sabbi",}];
-    return this.clients;*/
+    
+  }
+
+  async getClientsById(id:number){  //Función que obtiene roles SE CAMBIARÀ CON EL API
+
+    await this.http.get(environment.api+"/cliente/"+ id).toPromise().then(res=>{
+      this.currentClient=res as Client
+    console.log(this.currentClient)
+    
+    })
+
+    return this.currentClient
+    
   }
   
   //Envía el ID del cliente que se va a eliminar al API

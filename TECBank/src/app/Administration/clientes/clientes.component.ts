@@ -46,6 +46,7 @@ export class ClientesComponent implements OnInit {
   ngOnInit(): void { //Función que se ejecuta de primero cuando carga componentes
     
     this.clientServices.getClients().then(res=>this.clients=res);
+    this.clientServices.getClientsById(123456789).then(res=> console.log(res));
   }
 
   //Envía el ID del cliente que se va a eliminar al servicio

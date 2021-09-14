@@ -18,11 +18,11 @@ export class AccountsComponent implements OnInit {
   transfers:Transfer[]=[]
   newTransfer:Transfer={
     idPago:0,
-    monto:0,
-    numeroCuentaDestino:0,
+    monto:"",
+    numeroCuentaDestino:"",
     descripcion:"",
     fechaPago:"",
-    numeroDeCuenta:0,
+    numeroDeCuenta:"",
   }
   active = 1
   ngOnInit(): void {
@@ -35,14 +35,15 @@ export class AccountsComponent implements OnInit {
     return Math.floor(Math.random() * (max - min)) + min;
   }  
   submit(){
-    this.transferService.makeTransfers(this.newTransfer)
+    this.newTransfer.idPago=this.getRandomInt(1,1000)
+    this.transferService.makeTransfers(this.newTransfer).then(res=>this.transfers=res)
     this.newTransfer={
       idPago:0,
-      monto:0,
-      numeroCuentaDestino:0,
+      monto:"",
+      numeroCuentaDestino:"",
       descripcion:"",
       fechaPago:"",
-      numeroDeCuenta:0,
+      numeroDeCuenta:"",
     }
 
   }
