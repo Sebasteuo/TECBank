@@ -1,14 +1,1 @@
-
-  [
-    {
-      "user": "Admin",
-      "password": "ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=",
-      "tipo": "Administrador"
-    },
-    {
-      "user": "Prueba",
-      "password": "ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=",
-      "tipo": "Cliente"
-    }
-  ]
-
+[{"user":"Admin","password":"ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=","tipo":"Administrador"},{"user":"Prueba","password":"ViuxKBBd51bn4OHBnzLVR/D9Jm17x0K03Ky3AGp4mvQ=","tipo":"Cliente"},{"user":"Prueba2","password":"UGannZC1tMPHllUUHNkt8qEK0yGk2254K88ltrb+NRA=","tipo":"Cliente"}]
