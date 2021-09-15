@@ -48,28 +48,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bojorge\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\gacov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bojorge\\Documents\\BasesDeDatos\\Tareas\\TecBank\\TECBank\\TecBank API\\TecBank API.csproj",
+      "projectUniqueName": "C:\\Users\\gacov\\Music\\tareacorta\\TECBank\\TecBank API\\TecBank API.csproj",
       "projectName": "TecBank API",
-      "projectPath": "C:\\Users\\Bojorge\\Documents\\BasesDeDatos\\Tareas\\TecBank\\TECBank\\TecBank API\\TecBank API.csproj",
-      "packagesPath": "C:\\Users\\Bojorge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bojorge\\Documents\\BasesDeDatos\\Tareas\\TecBank\\TECBank\\TecBank API\\obj\\",
+      "projectPath": "C:\\Users\\gacov\\Music\\tareacorta\\TECBank\\TecBank API\\TecBank API.csproj",
+      "packagesPath": "C:\\Users\\gacov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gacov\\Music\\tareacorta\\TECBank\\TecBank API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Bojorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\gacov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -117,7 +109,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

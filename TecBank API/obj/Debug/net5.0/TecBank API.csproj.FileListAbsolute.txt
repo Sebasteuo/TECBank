@@ -151,3 +151,35 @@ C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\ref\TecBank API.dll
 C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.pdb
 C:\GitHub\TECbank\TecBank API\obj\Debug\net5.0\TecBank API.genruntimeconfig.cache
 C:\GitHub\TECbank\TecBank API\bin\Debug\net5.0\DBMS\Data\usuarios.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\appsettings.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\DBMS\Data\clientes.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\DBMS\Data\cuentas.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\DBMS\Data\empleados.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\DBMS\Data\pagos.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\DBMS\Data\roles.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\DBMS\Data\tarjetas.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\DBMS\Data\usuarios.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\TecBank API.exe
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\TecBank API.deps.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\TecBank API.runtimeconfig.dev.json
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\TecBank API.dll
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\ref\TecBank API.dll
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\TecBank API.pdb
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.csproj.AssemblyReference.cache
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfoInputs.cache
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.AssemblyInfo.cs
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CoreCompileInputs.cache
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.Manifest.cache
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\staticwebassets\TecBank API.StaticWebAssets.xml
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\scopedcss\bundle\TecBank API.styles.css
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.RazorTargetAssemblyInfo.cache
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.csproj.CopyComplete
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.dll
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\ref\TecBank API.dll
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.pdb
+C:\Users\gacov\Music\tareacorta\TECBank\TecBank API\obj\Debug\net5.0\TecBank API.genruntimeconfig.cache

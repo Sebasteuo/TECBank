@@ -11,7 +11,7 @@ namespace TecBank_API.DBMS.File_manager
     public class CuentaManager
     {
         public List<Cuenta> ListaDeCuenta= new List<Cuenta>();
-        private string path = "C:/GitHub/TECbank/TecBank API/DBMS/Data/cuentas.json";
+        private string path = "C:/Users/gacov/Music/tareacorta/TECbank/TecBank API/DBMS/Data/cuentas.json";
         public CuentaManager()
         {
             listarCuenta();
@@ -77,13 +77,15 @@ namespace TecBank_API.DBMS.File_manager
             int index = 0;
             for (int i = 0; i < this.ListaDeCuenta.Count; i++)
             {
+               int x= this.ListaDeCuenta[i].NumeroCuenta;
                 if (this.ListaDeCuenta[i].NumeroCuenta == NumeroCuenta)//llave== llave
                 {
                     index = i;
+                    item = this.ListaDeCuenta[index];// lista de item
                     break;
                 }
             }
-            item = this.ListaDeCuenta[index];//lista de item
+          
             return item;
 
         }
