@@ -39,6 +39,32 @@ namespace TecBank_API.DBMS.File_manager
 
 
         }
+
+
+        public int consultarCedula(Usuario usuario)
+        {
+
+            int index = 0;
+            for (int i = 0; i < this.ListaDeUsuarios.Count; i++)
+            {
+                if (this.ListaDeUsuarios[i].user == usuario.user)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+
+            int cli = this.ListaDeUsuarios[index].cedula;
+            return cli;
+
+
+
+
+
+        }
+
+
         public List<Usuario> listarUsuarios()
         {
             using (StreamReader file = File.OpenText(path))

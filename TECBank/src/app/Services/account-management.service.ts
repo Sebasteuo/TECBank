@@ -21,7 +21,16 @@ export class AccountManagementService {
   async getAccount(){  //Función que obtiene roles SE CAMBIARÀ CON EL API
     await this.http.get(environment.api+"/Cuenta").toPromise().then(res=>{
       this.accounts=res as Account[]
-      console.log(this.accounts)
+      
+    
+    })
+    return this.accounts;
+  }
+
+  async getAccountById(id:string){  //Función que obtiene roles SE CAMBIARÀ CON EL API
+    await this.http.get(environment.api+"/Cuenta/"+id+"/2").toPromise().then(res=>{
+      this.accounts=res as Account[]
+      
     
     })
     return this.accounts;

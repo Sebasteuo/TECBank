@@ -37,6 +37,13 @@ namespace TecBank_API.Controllers
             pm.agregarPago(pago);
         }
         [EnableCors("localhost")]
+        [HttpGet("[action]/{numeroDeCuenta}")]
+        public Pago GetCuentas(string numeroDeCuenta)
+        {
+            return pm.consultarPagoPorCedula(numeroDeCuenta);
+        }
+
+        [EnableCors("localhost")]
         // PUT api/<PagoController>/5
         [HttpPut]
         public void Put(Pago PagoParaCambiar)

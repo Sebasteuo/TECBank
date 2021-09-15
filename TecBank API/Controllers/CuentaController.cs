@@ -25,7 +25,7 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         // GET api/<CuentaController>/5
-        [HttpGet("{id,type}")]
+        [HttpGet("{id}/{type}")]
         public List<Cuenta> Get(int id,int type)
         {
             List<Cuenta> l1 = new List<Cuenta>();

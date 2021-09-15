@@ -85,6 +85,23 @@ namespace TecBank_API.DBMS.File_manager
 
         }
 
+        public Pago consultarPagoPorCedula(string numeroDeCuenta)//valor llave
+        {
+            Pago item = new Pago();
+            int index = 0;
+            for (int i = 0; i < this.ListaDePago.Count; i++)
+            {
+                if (this.ListaDePago[i].NumeroDeCuenta == numeroDeCuenta)//llave== llave
+                {
+                    index = i;
+                    break;
+                }
+            }
+            item = this.ListaDePago[index];//lista de item
+            return item;
+
+        }
+
         public void actualizarPago(int llave, string atributoAcambiar, string ValorParaCambiar)
         {
             int index = 0;

@@ -13,43 +13,71 @@ export class AccountsComponent implements OnInit {
 
   constructor(private transferService: TransferManagementService, private accountService: AccountManagementService) { }
 
-  selectedAccount:number|undefined=0
-  accounts:Account[]=[]
-  transfers:Transfer[]=[]
-  newTransfer:Transfer={
-    idPago:0,
-    monto:"",
-    numeroCuentaDestino:"",
-    descripcion:"",
-    fechaPago:"",
-    numeroDeCuenta:"",
+  selectedAccount: number | undefined = 0
+  accounts: Account[] = []
+  transfers: Transfer[] = []
+  newTransfer: Transfer = {
+    idPago: 0,
+    monto: "",
+    numeroCuentaDestino: "",
+    descripcion: "",
+    fechaPago: "",
+    numeroDeCuenta: "",
   }
   active = 1
+  list: Transfer[] = []
+
+ 
+
   ngOnInit(): void {
-    this.transferService.getTransfers(localStorage.getItem("UserId") as unknown as number ).then(res=>this.transfers=res)
-    this.accountService.getAccount().then(res=>{this.accounts=res})
+
+
+
+    this.accountService.getAccountById(localStorage.getItem("UserId") as unknown as string).then(res => {
+      this.accounts = res
+      this.getAllTransfers()
+    })
   }
+  async getAllTransfers() {
+    this.accounts.forEach(account => {
+      this.test(account)
+    })
+    return this.transfers
 
-
-  getRandomInt(min:number, max:number) {
+  }
+  async test(account: Account) {
+    this.transferService.getTransfers(account.numeroCuenta as unknown as string).then(res => {
+      console.log("numero de cuenta: "+ account.numeroCuenta)
+      console.log("Cantidad de Movimientos: "+res.length)
+      this.list=res
+      this.test2()
+    })
+  }
+  async test2() {
+    console.log(this.list.length)
+   this.list.forEach(element => {
+      this.transfers.push(element)
+    })
+  }
+  getRandomInt(min: number, max: number) {
     return Math.floor(Math.random() * (max - min)) + min;
-  }  
-  submit(){
-    this.newTransfer.idPago=this.getRandomInt(1,1000)
-    this.transferService.makeTransfers(this.newTransfer).then(res=>this.transfers=res)
-    this.newTransfer={
-      idPago:0,
-      monto:"",
-      numeroCuentaDestino:"",
-      descripcion:"",
-      fechaPago:"",
-      numeroDeCuenta:"",
+  }
+  submit() {
+    this.newTransfer.idPago = this.getRandomInt(1, 1000)
+    this.transferService.makeTransfers(this.newTransfer).then(res => this.transfers = res)
+    this.newTransfer = {
+      idPago: 0,
+      monto: "",
+      numeroCuentaDestino: "",
+      descripcion: "",
+      fechaPago: "",
+      numeroDeCuenta: "",
     }
 
   }
 
-  selectAccount(id:number|undefined){
-    this.selectedAccount=id
+  selectAccount(id: number | undefined) {
+    this.selectedAccount = id
   }
 
 }

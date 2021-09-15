@@ -10,6 +10,7 @@ namespace TecBank_API.Models
         public string user { get; set; }
         public string password { get; set; }
         public string tipo { get; set; }
+        public int cedula { get; set; }
 
     }
 }

@@ -32,5 +32,16 @@ namespace TecBank_API.Controllers
         {
             return Umanager.consultarCredenciales(u.user, u.password);
         }
+
+
+        [EnableCors("localhost")]
+        // GET: api/<ClienteController>
+        [HttpPost("[action]")]
+        public int getCedula(Usuario u)
+        {
+            return Umanager.consultarCedula(u);
+        }
+
+
     }
 }
