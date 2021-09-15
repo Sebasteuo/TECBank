@@ -1,1 +1,36 @@
-[{"Saldo":3000000,"Numero":123456789,"Descripcion":"hola","CedulaCliente":123456789,"NumeroCuenta":234566,"Tipo":2,"Moneda":1,"UsuarioCliente":"cob@guitar.com"},{"Saldo":0,"Numero":6545,"Descripcion":"dhdh","CedulaCliente":4563,"NumeroCuenta":180,"Tipo":2,"Moneda":2,"UsuarioCliente":""}]
+<<<<<<< HEAD
+[{"Saldo":3000000,"Numero":123456789,"Descripcion":"Compra de casa","CedulaCliente":123456789,"NumeroCuenta":234566,"Tipo":2,"Moneda":1,"UsuarioCliente":"cob@guitar.com"},{"Saldo":0,"Numero":6545,"Descripcion":"Compra de automóvil","CedulaCliente":4563,"NumeroCuenta":180,"Tipo":1,"Moneda":2,"UsuarioCliente":""},{"Saldo":0,"Numero":233333,"Descripcion":"Pago de Educación","CedulaCliente":9278944,"NumeroCuenta":677,"Tipo":1,"Moneda":3,"UsuarioCliente":""}]
+=======
+[
+  {
+    "Saldo": 3000000,
+    "Numero": 123456789,
+    "Descripcion": "hola",
+    "CedulaCliente": 123456789,
+    "NumeroCuenta": 234566,
+    "Tipo": 2,
+    "Moneda": 1,
+    "UsuarioCliente": "cob@guitar.com"
+  },
+  {
+    "Saldo": 3000,
+    "Numero": 123456789,
+    "Descripcion": "otra cuenta",
+    "CedulaCliente": 123456789,
+    "NumeroCuenta": 234576,
+    "Tipo": 1,
+    "Moneda": 3,
+    "UsuarioCliente": "cob@guitar.com"
+  },
+  {
+    "Saldo": 0,
+    "Numero": 6545,
+    "Descripcion": "dhdh",
+    "CedulaCliente": 4563,
+    "NumeroCuenta": 180,
+    "Tipo": 2,
+    "Moneda": 2,
+    "UsuarioCliente": ""
+  }
+]
+>>>>>>> d8b7793aeb79a002dfe74e6aba4e1e8fa63dfd80

@@ -25,10 +25,16 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         // GET api/<CuentaController>/5
-        [HttpGet("{id}")]
-        public Cuenta Get(int id)
+        [HttpGet("{id,type}")]
+        public List<Cuenta> Get(int id,int type)
         {
-            return cm.consultarCuenta(id);
+            List<Cuenta> l1 = new List<Cuenta>();
+
+            if (type==1) {
+                l1.Add(cm.consultarCuenta(id));
+                return l1; }
+            else { return cm.consultarCuentaPorCliente(id); }
+            
         }
         [EnableCors("localhost")]
         // POST api/<CuentaController>
@@ -55,10 +61,10 @@ namespace TecBank_API.Controllers
         }
 
         // GET api/<CuentaController>/5
-        [HttpGet("[action]/{id}")]
-        public List<Cuenta> Get2(int CedulaCliente)
+        [HttpGet("listaCuentas/{id}")]
+        public List<Cuenta> Get2(int id)
         {
-            return cm.consultarCuentaPorCliente(CedulaCliente);
+            return cm.consultarCuentaPorCliente(id);
         }
     }
 }
