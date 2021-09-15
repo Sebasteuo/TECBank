@@ -18,18 +18,12 @@
                                                 <label>Seleccione un número de cuenta: </label>
                                             </div> 
                                             <div class="col form-group">
-                                                <div ngbDropdown class="d-inline-block">
-                                                    <button class="btn btn-outline-primary" id="dropdownBasic1"
-                                                        ngbDropdownToggle>{{selectedValue}}</button>
-                                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                                        <button *ngFor="let account of accounts" ngbDropdownItem
-                                                            (click)="selectValue(account.numero)">{{account.numero}}</button>
-                                                       
-                                                        
-                                                    </div>
-                                                </div>
+                                                <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newline.numeroDeCuenta"
+                                                    required>
                                             </div>
                                         </div>
+
+                                       
                                         <div class="form-row">
                                             <div class="col form-group">
                                                 <label>Seleccione un tipo de movimiento: </label>
@@ -53,7 +47,7 @@
                                                 <label>Monto: </label>
                                             </div> 
                                             <div class="col form-group">
-                                                <input name="quantity" class="form-control" placeholder="Cuenta" [(ngModel)]="newline.movimiento"
+                                                <input name="quantity" class="form-control" placeholder="Monto" [(ngModel)]="newline.monto"
                                                     required>
                                             </div>
                                         </div>

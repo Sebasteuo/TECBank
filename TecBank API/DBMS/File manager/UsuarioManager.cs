@@ -48,5 +48,24 @@ namespace TecBank_API.DBMS.File_manager
             }
             return this.ListaDeUsuarios;
         }
+
+
+        private void guardarUsuario()
+        {
+            using (StreamWriter file = File.CreateText(path))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, this.ListaDeUsuarios);
+            }
+        }
+
+
+        public void agregarUsuario(Usuario usuario)
+        {
+            this.ListaDeUsuarios.Add(usuario);
+            guardarUsuario();
+        }
+
+
     }
 }

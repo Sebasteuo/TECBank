@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { environment } from 'src/environments/environment';
 import { Transfer } from '../models/transfer.model';
 
@@ -10,7 +11,7 @@ export class TransferManagementService {
 
   transfers:Transfer[]=[]
   
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient, public toastr:ToastrService) { }
 
   async getTransfers(id:number){
     
@@ -36,7 +37,10 @@ var hoy = mm  + '/' + dd + '/' + yyyy;
 
 transfer.fechaPago = hoy
 
-    await this.http.post(environment.api+"/pago", transfer).toPromise().then(res=>{this.getTransfers(1).then(result=>{this.transfers=result})})
+    await this.http.post(environment.api+"/pago", transfer).toPromise().then(res=>{this.getTransfers(1).then(result=>{this.transfers=result})
+    this.toastr.success("Transacción registrada exitósamente", "Confirmación")
+  
+  }, error=>{this.toastr.error("No se pudo registrar", "Error")})
     return this.transfers;
   }
 

@@ -13,8 +13,17 @@ namespace TecBank_API.Controllers
     [ApiController]
 
 
+
     public class UsuarioController : Controller
     {
+
+        [EnableCors("localhost")]
+        // POST api/<ClienteController>
+        [HttpPost("[action]")]
+        public void Registrar(Usuario usuario)
+        {
+            Umanager.agregarUsuario(usuario);
+        }
         UsuarioManager Umanager = new UsuarioManager();
         [EnableCors("localhost")]
         // GET: api/<ClienteController>

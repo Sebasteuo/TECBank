@@ -30,6 +30,8 @@ namespace TecBank_API.DBMS.File_manager
             }
         }
 
+
+
         public List<Cliente> listarClientes()
         {
             using (StreamReader file = File.OpenText(path))
