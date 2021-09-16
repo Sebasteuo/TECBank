@@ -58,12 +58,18 @@
                                                 <form #form autocomplete="off">
                                                     <div class="form-row">
                                                         <div class="col form-group">
-                                                            <label>Cuenta de Origen: </label>
+                                                            <label>Cuenta de origen: </label>
                                                         </div>
                                                         <div class="col form-group">
-                                                            <input name="quantity" class="form-control"
-                                                                placeholder="Cuenta"
-                                                                [(ngModel)]="newTransfer.numeroDeCuenta" required>
+                                                            <div ngbDropdown class="d-inline-block">
+                                                                <button class="btn btn-outline-primary" id="dropdownBasic1"
+                                                                    ngbDropdownToggle>{{selectedAccount}}</button>
+                                                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                                                    <button *ngFor="let account of accounts" ngbDropdownItem
+                                                                        (click)="selectAccount(account.numeroCuenta)">{{account.numeroCuenta}}</button>
+                                                               
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class=" form-row">

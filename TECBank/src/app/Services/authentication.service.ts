@@ -11,10 +11,14 @@ import { Credentials } from '../models/credentials.model';
   providedIn: 'root'
 })
 export class AuthenticationService {
-  newUser: Credentials = { user: "", password: "", tipo: "" }
+  newUser: Credentials = { user: "", password: "", tipo: "", cedula:0 }
 
   constructor(private router: Router, public toastr: ToastrService, public http: HttpClient) { }
   Users: Credentials[] = []
+
+
+
+  //Hace una consulta en el API para verificar credenciales del usuario y guardar los datos del usuario como cookies
   async login(credentials: Credentials) {
 
    
@@ -40,11 +44,15 @@ export class AuthenticationService {
     localStorage.removeItem("UserId")
     this.router.navigate(["/Welcome"])
   }
-  async Register(tipo: string, user: string, password: string) {
-    if (tipo && user && password) {
+
+
+  //Envía los datos al API para registrar un cliente 
+  async Register( id:number, tipo: string, user: string, password: string) {
+    if (tipo && user && password && id) {
       this.newUser.user = user
       this.newUser.password = password
       this.newUser.tipo = tipo
+      this.newUser.cedula = id
       await this.http.post(environment.api + "/usuario/Registrar", this.newUser).toPromise().then(res => {
         this.toastr.success("Registrado exitosamente", "Exito")
         this.router.navigate(["/Login"])

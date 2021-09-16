@@ -38,9 +38,9 @@ namespace TecBank_API.Controllers
         }
         [EnableCors("localhost")]
         [HttpGet("[action]/{numeroDeCuenta}")]
-        public Pago GetCuentas(string numeroDeCuenta)
+        public List<Pago> getPagos(string numeroDeCuenta)
         {
-            return pm.consultarPagoPorCedula(numeroDeCuenta);
+            return pm.consultarPagoPorNumeroDeCuenta(numeroDeCuenta);
         }
 
         [EnableCors("localhost")]

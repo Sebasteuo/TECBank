@@ -27,35 +27,29 @@ export class AccountsComponent implements OnInit {
   active = 1
   list: Transfer[] = []
 
- 
-
   ngOnInit(): void {
-
-
-
     this.accountService.getAccountById(localStorage.getItem("UserId") as unknown as string).then(res => {
       this.accounts = res
+      this.selectedAccount = this.accounts[0].numeroCuenta
       this.getAllTransfers()
     })
   }
+
   async getAllTransfers() {
     this.accounts.forEach(account => {
-      this.test(account)
+      this.getTrasfersByAccount(account)
     })
-    return this.transfers
+  }
 
-  }
-  async test(account: Account) {
+  async getTrasfersByAccount(account: Account) {
     this.transferService.getTransfers(account.numeroCuenta as unknown as string).then(res => {
-      console.log("numero de cuenta: "+ account.numeroCuenta)
-      console.log("Cantidad de Movimientos: "+res.length)
-      this.list=res
-      this.test2()
+      this.list = res
+      this.pullAllTransfers()
     })
   }
-  async test2() {
-    console.log(this.list.length)
-   this.list.forEach(element => {
+
+  async pullAllTransfers() {
+    this.list.forEach(element => {
       this.transfers.push(element)
     })
   }
@@ -64,7 +58,11 @@ export class AccountsComponent implements OnInit {
   }
   submit() {
     this.newTransfer.idPago = this.getRandomInt(1, 1000)
-    this.transferService.makeTransfers(this.newTransfer).then(res => this.transfers = res)
+    this.newTransfer.numeroDeCuenta = this.selectedAccount?.toString();
+    this.transferService.makeTransfers(this.newTransfer).then(res => {
+      this.transfers = []
+      this.getAllTransfers()
+    })
     this.newTransfer = {
       idPago: 0,
       monto: "",
@@ -73,7 +71,6 @@ export class AccountsComponent implements OnInit {
       fechaPago: "",
       numeroDeCuenta: "",
     }
-
   }
 
   selectAccount(id: number | undefined) {

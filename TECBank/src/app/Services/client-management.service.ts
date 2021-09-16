@@ -28,7 +28,7 @@ export class ClientManagementService {
    * 
    * @returns 
    */
-  async getClients(){  //Función que obtiene roles SE CAMBIARÀ CON EL API
+  async getClients(){  //Función que obtiene clientes
 
     await this.http.get(environment.api+"/cliente").toPromise().then(res=>{
       this.clients=res as Client[]
@@ -40,7 +40,7 @@ export class ClientManagementService {
     
   }
 
-  async getClientsById(id:number){  //Función que obtiene roles SE CAMBIARÀ CON EL API
+  async getClientsById(id:number){  //Función que obtiene clientes según su ID
 
     await this.http.get(environment.api+"/cliente/"+ id).toPromise().then(res=>{
       this.currentClient=res as Client

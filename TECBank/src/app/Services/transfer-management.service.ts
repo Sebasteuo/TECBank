@@ -14,18 +14,11 @@ export class TransferManagementService {
   constructor(private http: HttpClient, public toastr: ToastrService) { }
 
   async getTransfers(id: string) {
-
-    //this.roles=[{idRol:1, nombre:"Administrador", descripcion: "Jefe"},{idRol:2, nombre:"Cliente", descripcion: "Probador"}];
-    await this.http.get(environment.api + "/pago/GetCuentas/"+ id).toPromise().then(res => {
+    await this.http.get(environment.api + "/pago/getPagos/" + id).toPromise().then(res => {
       this.transfers = res as Transfer[]
-      console.log("Tamaño res: "+ this.transfers.length)
-
     })
     return this.transfers;
-
   }
-
-
 
   async makeTransfers(transfer: Transfer) {
 
@@ -38,11 +31,14 @@ export class TransferManagementService {
     transfer.fechaPago = hoy
 
     await this.http.post(environment.api + "/pago", transfer).toPromise().then(res => {
-    
       this.toastr.success("Transacción registrada exitósamente", "Confirmación")
 
-    }, error => { this.toastr.error("No se pudo registrar", "Error") })
+    }, error => {
+      this.toastr.error("No se pudo registrar", "Error")
+      console.log(error)
+    })
     return this.transfers;
   }
 
 }
+
