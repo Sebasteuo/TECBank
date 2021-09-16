@@ -3,21 +3,50 @@
     <aside class="col-lg" style="margin: 5% 5% 5% 5%;">
         <div class="card">
             <article class="card-body">
-                <h4 class="card-title mb-4 mt-1">Reporte</h4>
+                <h4 class="card-title mb-4 mt-1">Administración de Clientes</h4>
                 <hr>
                 <div class="row">
                     <!-- table -->
-                    <div class="col-md-12 ">
-                        <div class="card" style="margin-bottom: 10px; min-height: 80vh;">
-                            <article class="card-body">
-                                <pdf-viewer [src]="source" [fit-to-page]="true" [render-text]="true" [show-all]="true" style="display: block;">
+                    
+                    <div class="col-md-10">
+                        <!-- Employee data -->
+                        <div class="card">
 
-                                </pdf-viewer>
-                                </article>
-                        </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+
+                                    <div class=table-wrapper>
+                                        <table class="table table-hover bike-table">
+                                            <thead>
+                                                <!-- Columnas para los datos mostrados de los clientes-->
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Primer Apellido</th>
+                                                    <th>Segundo Apellido</th>
+                                                    <th>Préstamo</th>
+                                                    <th>Cuotas</th>
+                                                    <th>Monto</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr > <!-- ngFor repite una sección del código HTML, por cada cliente hace una nueva fila en la tabla-->
+                                                    <td *ngFor="let line of this.report">{{line}}</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- card.// -->
+                        <br />
+                        <br />
                     </div>
                 </div>
             </article>
-        </div>
-    </aside>
-</div>
+        </div> <!-- card.// -->
+    </aside> <!-- col.// -->
+</div> <!-- row.// -->
+
+<!--container end.//-->

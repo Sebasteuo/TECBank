@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReportManagementService } from 'src/app/Services/report-management.service';
 
 @Component({
   selector: 'app-reporte',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReporteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private reportService: ReportManagementService) { }
 
+  report:String[]=[]
   source: any ="../../../assets/files/pdf-test.pdf"
   ngOnInit(): void {
+    this.reportService.getReport().then(res=>{
+      this.report=res
+    })
   }
 
 }
