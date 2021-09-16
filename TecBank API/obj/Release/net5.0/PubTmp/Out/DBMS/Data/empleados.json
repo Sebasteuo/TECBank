@@ -1,0 +1,20 @@
+[
+    {
+        "cedula":"192837465",
+        "FechaDeNacimiento":"21-4-70",
+        "IdEmpleado":"11",
+        "Nombre1":"Esteban",
+        "Apellido1":"Solano",
+        "Apellido2":"Monge",
+        "Rol":"gerente"
+    },
+    {
+        "cedula":"918273645",
+        "FechaDeNacimiento":"12-8-98",
+        "IdEmpleado":"22",
+        "Nombre1":"Johan",
+        "Apellido1":"Maroto",
+        "Apellido2":"Leiva",
+        "Rol":"cajero"
+    }
+]

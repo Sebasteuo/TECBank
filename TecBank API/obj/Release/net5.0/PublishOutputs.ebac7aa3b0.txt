@@ -1,0 +1,15 @@
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\TecBank API.exe
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\DBMS\Data\clientes.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\DBMS\Data\cuentas.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\DBMS\Data\empleados.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\DBMS\Data\pagos.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\DBMS\Data\roles.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\DBMS\Data\tarjetas.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\DBMS\Data\usuarios.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\TecBank API.dll
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\TecBank API.deps.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\TecBank API.runtimeconfig.json
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\TecBank API.pdb
+C:\Users\Bojorge\Documents\BasesDeDatos\Tareas\TecBank\TECBank\TecBank API\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
