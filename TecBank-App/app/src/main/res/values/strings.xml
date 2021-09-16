@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TecBank</string>
+    <string name="Boton_entrar">Entrar</string>
+    <string name="Boton_regist">Registrarse</string>
+    <string name="Boton_Salir">Salir</string>
+    <string name="atras">Atras</string>
+
+    <string name="Boton_Cuentas">Cuentas</string>
+    <string name="Boton_Tarjetas">Tarjetas</string>
+    <string name="Boton_prestamos">Prestamos</string>
+
+
+    <string name="label_eliminar">Eliminar</string>
+    <string name="label_modificar">Modificar</string>
+</resources>
